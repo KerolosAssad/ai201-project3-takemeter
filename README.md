@@ -147,14 +147,14 @@ The `mechanic_design` column has nonzero entries in every row — it is where al
 | "What is it with Halo that makes me not underutilize grenades?" | `player_experience` | `mechanic_design` | 0.29 |
 | "How do people design book adaptations?" | `dev_process` | `design_theory` | 0.28 |
 | "Demo Design Question: Separate Curated Map or Part of the Full Open World?" | `dev_process` | `mechanic_design` | 0.30 |
-| "Picking a resource type for a 4X" | `mechanic_design` | `mechanic_design` | ~0.30* |
+| "Why does espionage feel so hard to make satisfying in strategy games?" | `design_theory` | `design_theory` | 0.29 |
 | "Mina the Hollower had an 800+ Page Design Doc" | `dev_process` | `mechanic_design` | 0.29 |
 
-\* Exact confidence not pulled from a specific run output; included to show a correct prediction for contrast.
+Of the 13 correct predictions on the full test set, 12 were `mechanic_design` (the model's default guess) and exactly 1 was not — the espionage post above, correctly predicted as `design_theory`. I chose that one for this table specifically because it's the single piece of evidence in the entire test set that the model's correct predictions aren't *purely* an artifact of majority-class collapse; everything else it got right, it got right by guessing the same label almost every time.
 
-The one correct prediction shown ("Picking a resource type for a 4X") is reasonable on its face — it genuinely is a `mechanic_design` post, asking a specific resource-system question for the poster's own 4X game — but given that confidence scores are essentially flat (0.28-0.30) across every prediction shown here, correct or incorrect, this "correct" classification is much more likely an artifact of the model's collapse onto `mechanic_design` as a default guess than evidence the model identified anything specific about this post's content.
+Even so, this prediction shouldn't be over-read as the model "learning" `design_theory`: it's one example, with confidence (0.29) indistinguishable from every other prediction in this run, correct or incorrect. The post itself is a clean fit for `design_theory` under my own taxonomy — it poses a genre-wide question ("why is espionage hard to make satisfying in strategy games generally") rather than asking about one specific system in the poster's own game — but I can't conclude the model identified that structural feature rather than landing on the right label by chance, given how flat and uninformative the confidence scores are across the board.
 
-**A note on confidence:** every wrong prediction listed above carries a confidence between 0.28 and 0.30 — barely above the 0.25 a uniform random guess across 4 classes would produce. The model isn't confidently wrong; it's barely committing to any prediction at all. This is consistent with a model that never found a strong signal for any class and is outputting something close to its prior over the label distribution, rather than a model that learned sharp (even if sometimes incorrect) decision boundaries.
+**A note on confidence:** every prediction shown above, correct or incorrect, falls in a narrow 0.28-0.30 band — barely above the 0.25 a uniform random guess across 4 classes would produce. The model isn't confidently wrong, and it isn't confidently right either; it's barely committing to any prediction at all. This is consistent with a model that never found a strong signal for any class and is outputting something close to its prior over the label distribution, rather than a model that learned sharp (even if sometimes incorrect) decision boundaries.
 
 ### Reflection: what the model learned vs. what I intended
 
