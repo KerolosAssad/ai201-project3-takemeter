@@ -1,0 +1,13 @@
+{
+  "baseline_accuracy": 0.8333,
+  "finetuned_accuracy": 0.4333,
+  "improvement": -0.4,
+  "test_set_size": 30,
+  "label_map": {
+    "design_theory": 0,
+    "mechanic_design": 1,
+    "player_experience": 2,
+    "dev_process": 3
+  },
+  "model": "distilbert-base-uncased"
+}

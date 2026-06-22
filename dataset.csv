@@ -1,0 +1,1314 @@
+text,label,notes
+"The more ""unique"" or complicated your mechanics are, the more barriers you make the player have to clear to enjoy your game. -A Post-Mortem of my failed game demo.
+
+Two months ago I released the demo for my game Paradox Patrol. I had worked on the game for about half a year and created everything except the model assets from scratch. The game started it's life as an entry into a month long game jam. To my surprise, the game won the jam and it gave me a boost of confidence that maybe the concept for the game was worth fleshing out and turning into a full game. The theme of the jam was Evolution, so I came up with the idea of creating a gameplay system that merges two different genres.
+
+Two of my favorite games are Metroid Dread (a 2.5D Metroid) and Returnal (a 3rd person shooter) and so I developed a gameplay system where the camera always stays fixed to the character like a 2.5D sidescroller, but allows you to move around and shoot in 3D space like a 3rd person shooter. Something I eventually ended up calling an Omni-shooter.
+
+So I created an hour long demo with fully fleshed out mechanics and two major boss fights, posted some videos about it on my youtube channel and released it onto Steam...
+
+At the time of writing this, the demo has one single review. For the few people that have played it, they really struggled grasping the controls because they are different than most games. That and the majority of people could not figure out how to progress through a certain part of the level, even though there are bright pink glowing flowers acting as a waypoints of where to go.
+
+There have been a couple people who have posted let's plays of it onto youtube, but they all get stuck at that point in the level and give up; never getting to experience the best parts of the demo which are the two bosses 😞 I think why this happens is that people aren't used to playing a game that looks like a side-scroller but gives full 3D movement. So they aren't accustomed to thinking things like ""Oh, maybe I should move towards the camera to explore.""
+
+I believe in the indie dev spirit of risk taking and not being afraid to try something different. But what I think my game proves is that there IS such a thing as being too different. I spent months essentially re-inventing the wheel to create a new gameplay genre, but it alienated players because it wasn't what they were used to playing control-wise. I'm still very proud of the game and I still love the concept and story. But I think if I want players to actually enjoy it, I'll need to toss out my Omni-Shooter system and turn it into a regular old 3rd Person Shooter",dev_process,very difficult
+"Toxicity is a design choice: the ""blame target"" a game gives you sets the toxicity dial
+
+I'm currently thinking about creating my game
+
+Here's a contradiction that got me started. In Deep Rock Galactic, a co-op game, one player's mistake can wipe the whole team, yet its community is famous for being one of the kindest in gaming. Meanwhile League, CS2, Dota 2 and Valorant are infamous for toxicity. Same kind of people, wildly different behavior.
+
+The cleanest way I found to explain it is to ask one question of any competitive game: when you lose, where can the blame go ?
+
+In League, it goes to a teammate. The blame has a human address, which is exactly what makes it toxic: there's a specific named person to flame. In chess, it goes to you and only you. No teammates, no luck, so a loss is unambiguously yours. That kills interpersonal toxicity (nobody to scapegoat) but it's brutal on the ego, and tellingly the main toxicity left in online chess is accusing your opponent of cheating, the last blame-shift available. In Hearthstone, it goes to the dice. ""I got unlucky"" protects your ego without creating a human victim, which is part of why card-game lobbies stay calmer.
+
+So the available blame target is a design choice, and it sets the toxicity dial. The psychology underneath is well documented: the fundamental attribution error (we blame other people's character, not their situation), self-serving bias (our wins are skill, our losses are someone else's fault), and frustration-aggression (losing produces negative affect, and that affect needs a target). Online disinhibition then strips out the brakes that would normally stop you saying it to a person's face.
+
+What's interesting is that studios have actually moved these numbers with structure, not policing. Riot found that making cross-team chat opt-in dropped abuse complaints even though ~79% of players turned it back on. Overwatch's endorsement system reportedly cut disruptive matches by ~40%. Deep Rock leans on pings instead of open chat and gives you a one-button ""Rock and Stone!"" cheer, so being nice is a reflex. The common thread is removing or redirecting the blame target, not adding more bans.
+
+Curious where people land on this: is the blame target the right frame, or is it too reductive? And are there games that point blame at a human and still stay civil?
+
+I wrote up the full version with all the studies and studio data here: https://www.devbro.fr/blog/toxicity-and-blame",design_theory,somewhat difficult
+"The Open World portion of Mario Kart World gets dismissed as 'bad and empty' because people don't understand why it's really there
+
+I only recently picked up a Switch 2 and have put a good 20+ hours into MKW. ~5 of it has been doing races with the other 15 hours spent driving around the open world having fun in the playground. Going into it, I was ready to be apprehensive about it just due to the sentiment online, but I was pleasantly surprised at how fun it was.
+
+Ultimately, I think it's a weird game because it markets to both pros and casuals, but feels like it is meant for the people in-between those two extremes - The person who want's to get better at the game. In my opinion, the reason there isn't more 'directed content to do' is because all of the P Switches, Peach Medallions, ? Blocks, Nabbits, and Chargin Chucks are placed as fun ways to teach you how to be better at the game.
+
+P Switches - guide you through a small section of a route to get you to learn a new technique/new area better to use it during a race
+
+? Blocks - let you learn about a track in a slower more methodical pace without any pressure. In older games this was impossible because youd have to play VS/Time Trial and just 'lose the race' every time if you wanted to learn shortcuts. For people who hate the pressure that comes with that, this is the perfect solution
+
+Peach Medallions - Give you opportunities to practice gliding/jumping/grinding in different scenarios which you can apply during races
+
+Nabbits - teach you that every bit of speed matters. Getting 'drift practice' in with these guys lets new players learn how to drift, jump, and boost to use lots of little speed advantages to gain ground on a fast opponent
+
+Chargin Chucks teach you how to aim and hit moving targets with green shells instead of relying on homing shells
+
+All of the activities you can do in the world make you just a little bit better at the game by nature of beating each little challenge. Every single one teaches the player something about a route or let them practice a technique with 0 pressure which they can then take into a race and use that practiced technique under pressure to place higher than they ever did before...",design_theory,somewhat difficult
+"Mina the Hollower had an 800+ Page Design Doc
+
+Some colleagues and I were recently in a call with Alec Faulkner, a game designer at Yacht Club Games, playing through the opening of Mina the Hollower and talking about its design. When someone in the chat asked about what Mina's design documentation looked like, he showed us their 800+ page design document. Here's two screenshots:
+
+Overview Page
+
+Partial Buckler Driver
+
+The other 2 devs and I were were genuinely surprised. I was sure he was about to say what I've heard a dozen times, ""We did some initial documentation for planning, and we wrote down the key summaries for new designers to read, but as this is a tightly focused action game eventually it becomes more efficient to just have a designer play the current build and talk about it than constantly updating and re-reading a massive written document"".
+
+Nope, not the case. Alec made it clear that the paper and whiteboard design process IS the main design process for them, they wanted to get everything worked out and agreed upon at that stage first - and only implement things they were highly confident in. No ""throw in a bunch of ideas and see what happens, finding the fun through iteration"". Everything was exhaustively worked out from the start, and when things changed they updated the documentation.
+
+Now I'm used to that kind of exhaustive pre-planning for system and feature design, I make 100+ slide presentations, or video walkthroughs, or miro boards, or focused design documents on individual features or interlocking systems all the time... But I'm so used to designers that focus on moment-to-moment gameplay, including in AAA, saying, ""After a while, the game becomes its own documentation. Just play it, it's faster to try it yourself and see how it feels rather than theorycrafting everything ahead of time.""
+
+Of course, not every production practice a great game follows is good to replicate on other projects. Some only work on specific teams, some have huge tradeoffs with harder-to-see costs.
+
+So I wanted to ask you all, what kind of games do you work on and how do you approach documenting their design? What have you seen work well, what hasn't?",dev_process,easy
+"Does genre-merging increase marketability or hamper it?
+
+TLDR: Does incorporating elements from a Steam-successful genre (roguelikes) into a pretty dead genre (2D platformers, atmospheric adventure) increase the marketability by adding it to a new pool of potential interest, or does it hamper it by not fully committing to either lane?
+
+Context:
+I have a side-scrolling twin-stick shooter that leans heavy into atmospheric art, HD2D-style. People respond well to the art, and in the small playtesting I've done people have found the controls juicy enough for a decent start. It's mechanically built to maybe 70% of completion not including sound, including physics and elemental interactions, etc. What's not built is the majority of actual levels. Lots of test sequences, but little in the way of actual end-to-end progression. I've got about 8 months of steady effort sunk into it, and this is my first sizable, non-game jam project. As such, I'm coming at this like an idiot and making all the mistakes people tend to make here.
+
+In doing some market research, I realized just how poorly 2D platformers and twin-sticks do on Steam--I was aware not great, but didn't realize how badly. Though there are exceptions, it's a pretty flat market that doesn't really suit the Steam audience. Roguelikes perform better.
+
+I've been prototyping a roguelike level progression system for the past few weeks to see if it could work, and it can, but given my own level of development experience there's no way (or desire, frankly) that I would ever make this a particularly crunchy roguelike. It would be roguelike elements (upgrades to movement and combat), but not full builds, etc. More Spelunky than Risk of Rain.
+
+What I'm trying to figure out is whether this added development time would create a product more suited to the Steam marketplace, or if it's unlikely to really pay off and I should cut my losses, create the minimal complete version of the game, and move on. The non-rogue version of it would be more comparable to Neva. The rogue version of it would be somewhere between there and Spelunky, without the deep meta.",dev_process,somewhat difficult
+"What design principles make class/job systems satisfying in MMORPGs and RPGs?
+
+Hi everyone,
+
+
+I’m trying to better understand class/job systems from a game design perspective.
+
+
+I’m not looking for a simple ranking of “the best game” or a popularity contest. I’m more interested in why certain class systems feel satisfying, memorable, flexible, or deep from a mechanical and design standpoint.
+
+
+More specifically, I’d like to discuss the rules and design choices behind class/job systems in RPGs and MMORPGs.
+
+
+Questions:
+
+
+What makes a class/job system satisfying from a design perspective?
+
+
+2. How important is strong class identity compared to build freedom?
+
+
+3. Is it better design to let one character learn multiple classes/jobs, or to force each character into a stronger specialization?
+
+
+4. What are the benefits and drawbacks of multiclassing or hybrid builds?
+
+
+5. How can a game create meaningful class progression without overwhelming the player?
+
+
+6. What makes a class system feel deep without becoming too complex or unreadable?
+
+
+7. What are good ways to make classes feel distinct mechanically, not just visually or thematically?
+
+
+8. How should a game balance accessibility for new players with long-term mastery for experienced players?
+
+
+9. What class/job systems do you think are well-designed, and what specific mechanics make them work?
+
+
+10. On the opposite side, what are common design mistakes in class/job systems?
+
+- too much homogenization?
+
+- useless or dominant classes?
+
+- false choices?
+
+- overly rigid roles?
+
+- too many passive bonuses?
+
+- poor balance between freedom and identity?
+
+
+11. Are there examples of games where the class system is ambitious but fails because of its rules, balance, progression, or player incentives?
+
+
+12. In your opinion, what should be the core design goal of a great class/job system: player expression, tactical clarity, role identity, experimentation, balance, or long-term progression?
+
+
+I’d really appreciate answers that explain the underlying mechanics and design reasoning, rather than just naming a favorite game.
+
+
+Thanks in advance.",design_theory,somewhat difficult
+"There's a problem with learning game design, getting into it. The tutorials, guides, they're not very practical
+
+So most of the tutorials you see on Brackeys or Game Maker Toolkit, or even game design books, Designing Games- A Guide to Engineering Experiences by Tynan Sylvester, which i read, and basically says to do a lot of prototyping, what i got from it, these that are mostly recommended, yes, they show some principles, they show what works, what doesn't, so they're pretty good, but I wish there was something more practical, more to the point.
+
+So I'm talking about something practical, like I wish there were some tutorials that show you how to come up with ideas, how to show the process of coming up with ideas. It doesn't have to be live, it could be scripted, since coming up with ideas may be hard, but they could discuss how they come up with this idea and why it works, what are the side effects and such.
+
+Then, making a design document, it's not very much talked about, i think. How to work with the team, how to communicate.
+
+Balancing, how to balance game mechanics, when you have a lot of numbers. In Sylvester's book, he says to push it to it's limit, until it doesn't work anymore, i think, if i remember, but not sure if it's really practical, if it's good advice, because i don't really understand what that really means. I'd probably need to test in a game these changes, but when you make a change, you have a feeling that the option before could have been useful, so you may not know which one would be the better option
+
+So these are more theoretical, what could you use in your game, not really practical, like what a game designer really does. Wish there was some more practical tutorials, how to really get in game design. I feel like game design, is like a group that was made in the past, where aspiring/amateur game designers can't easily get in the group, that's how it feels to me. Like it feels like magic, what they do, and there's not really explanations how to do what they do.",dev_process,somewhat difficult
+"Is there a way to make a customizable MC feel iconic without losing player projection?
+
+I’ve been trying to understand a very specific feeling I have toward customizable protagonists in RPGs/media, and I’m wondering if there’s an actual design/art term for it.
+
+Theres fully customizable, individual characters like Bg3’s Tav which makes people feel deeply attached to their own Tav, but fandom imagery becomes fragmented into everyone’s personal oc.
+People post their Tavs but from an external point of view it's like viewing someone oc, so you don't feel attached or ""involved” to it:you’re witnessing someone else’s experience from the outside, there’s no “unity”.
+
+Meanwhile, with characters like the Tarnished from Elden Ring, the visual design language tends to converge around the iconic Raging wolf set armour. That creates a strong common shared identity for fan arts and edits, but at least for me, it can also make the design feel more like ""the armor"" is the character itself.
+
+Like instead of making me feel “that could be me/my character underneath” it often makes me feel like the armor itself IS the character, almost like the armor becomes the character’s face so it leaves nothing to project on, and I don't really fully understand why since the iconic armour set is purposely covering the whole body.
+
+The armor set don’t feel like they’re concealing an identity but more like giving the character an identity of their own, even if the body underneath is hidden.
+What I’m wondering it: does this feeling/concept have a name?
+
+Is it actually possible for a customizable protagonist to feel BOTH deeply personal and have a projectable “placeholder” (especially for fandom stuff like edits/fanart) at the same time, (without giving the “tarnished” effect), or do those two things inherently cancel each other out?",player_experience,very difficult
+"The Problem with Design “Philosophy”
+
+Among the game devs that I mentor, it’s rarely the seniors that ask me the headache-causing questions. It’s usually the college students. Often they’re sending me some thought-provoking article or paper on the “nature of games as a medium”. These pieces get so far away from how I view design in general and art as a whole that it’s hard to know where to begin responding. 
+
+This usually comes from the author approaching artistic mediums by looking at their formal properties. They note that paintings are static images, movies are time-based, etc. Then once they define those characteristics, they start asking questions like “Can games be art if they contain properties that paintings don’t? Paintings are static images, offering full artistic control over the experience. In a game, players might experience the events in different ways or different orders.”
+
+I remember having a discussion with a designer about this. Afterward, I invited him to an art museum.
+
+We walked around the rooms, exploring the spaces together, lingering on some paintings and barely glancing at others. Others in the museum hunted for specific famous paintings they wanted to see, following their printed quest logs.
+
+Theory that ends at the edge of the painting misses the actual experience: exploring an art museum. Exploring an art museum involves non-linear experiences, shaped by the architecture (level design) but ultimately mirrors a sandbox walking simulator.
+
+This approach to mix practical theory with ideology/philosophy infests many design discussions within our industry too, like asking if games that solely use their mechanics to deliver their narrative themes are “more true to the medium” or “purer” in some way. It’s all very philosophical, academic, and not at all how I think about art...",design_theory,somewhat difficulty
+"How Insomniac's Spider-Man on PS4 proved scientifically that Fast-Travel should always be an option.
+
+Fast travel is a shortcut for open-world designers who want to make an excessively open world without figuring out how a player would interact with it unless they're Marvel's Nightcrawler and could teleport to the important parts of the world and cut out the filler.
+
+It's a convenience and ""Quality of Life"" feature for designers who don't understand how to make their worlds interesting to navigate.
+
+I think the biggest win of ""respecting a player's time"" via Fast Travel versus player immersion and enjoyment of the game as presented is that Insomniac's Spider-Man on PS4 has fast-travel and has a specific trophy for using it 5 times. That number is important, because according to data tracked on psnprofiles.com, 66.43% of players got the trophy for PSNprofiles users, and 38% got it overall among Playstation players.
+
+Like, how many times do you fast-travel in a typical open-world game with fast-travel? The answer is definitely a lot. I bet most players who played Skyrim probably fast-traveled more than five times before they finished the Bleak Falls Barrow quest for Whiterun.
+
+So let's focus on that 66.43%/38% of the players who got that trophy, and compare it to other trophies that were nearly at or at a higher percentage of completion that players of the game received for completely optional content or end-game content.
+
+66.41%/35.2% of players got the optional ""Backpacker"" Trophy for finding all of the hidden backpacks.
+
+65.77%/35.8% of players got the optional ""Hero for Higher"" Trophy for getting to the very top of the Avengers tower and perching there for a second.
+
+75.47%/47.8% of players got the optional ""Amazing Coverage"" Trophy for activating every single Surveillance Tower...",design_theory,somewhat difficult
+"Solving ""Feel-Dumb"" Moments (the Machine Guarding technique)
+
+Here’s how we solved a huge problem that led to players feeling dumb, frustrated, and mad at themselves… When they should have been mad at us.
+
+Faeria is a unique strategy cardgame where players build the board they play on each match. Most of your focus is on the cards you’re playing, but you also can use the “power wheel” once each turn to build a new land or gain a resource (like drawing an extra card).
+
+This god power is free, so you should always use it. It’s easy to remember to use it in the early game, because you need to make lands for your creatures to walk on. You couldn’t do anything else yet.
+
+However once players had the initial lands they needed and more units to consider on each turn, they started forgetting to use their free power.
+
+When they realized they’d lost out on a free land, card, or resource for no reason – they felt dumb, and mad at themselves for it. It was easy for them to start saying, “I’m not cut out for this game” and quit.
+
+This was not the skill we wanted to test. This was a game about how you used your resources, not whether you remembered to use them.
+
+We tried everything to help players remember. We tried flashing the wheel, we tried audio callouts, we tried heavily emphasizing the wheel during the tutorials, we added text reminders and more.
+
+Nothing worked... Until I remembered an idea from Industrial Manufacturing.
+
+To prevent mistakes around a dangerous machine, you don’t JUST train workers to not make mistakes: You design the machine so the mistakes become impossible.
+
+One technique for this is called, ""Machine Guarding"". If you need to hold down two buttons on the side of a machine to get it to run, your hands CANNOT also be inside the machine while it’s running.",mechanic_design,very difficult
+"Why Devs fight to preserve Irrelevant Options (and how to fix it)
+A few days ago I posted here about the Machine Guarding technique. I talked about how this idea from industrial manufacturing helped our team solve one of the game's peristent annoyances, and how it was a huge win that had no meaningful downside. It's as close to ""strictly better"" an improvement as you can get.
+
+Which was why it was surprising how most of the team was strongly opposed to the idea at the time.
+
+Part 1 - Loss of Agency
+
+When I proposed that solution, most of the team was concerned that we were removing an option from players. ""What if they want to end their turn without using the power wheel? Your change makes that impossible. We'll be losing depth and denying players agency.""
+
+Humans have a natural cognitive bias to preserving options. Losing options restricts our freedom, so imagining that loss feels bad. Even if the option is completely irrelevant, meaning you'll never choose it in practice, people are reluctant to lose out.
+
+This often hits designers hard when considering simplifications to their game, because they know the option currently exists... But when players show up, they don't know that there used to be a way to end your turn without taking an action on the power wheel. They just accept it as one of the natural rules of the game. You can't skip drawing a card at the start of your turn, you can't skip using the power wheel either. Same as in chess, you've got to make a move. That's part of the strategy.
+
+After talking about it for a while without much progress, we decided to do a test: Fr the next 2 weeks, people would post in the team chat every time they intentionally ended their turn without using the power wheel...",design_theory,very difficult
+"Torn on having a loop timer. What is your preference?
+
+For the last 8 or so months I've been working on a game that is structurally similar to Blue Prince in which you draw rooms from a deck and choose the order in which you place them. There are a number of deltas (Specific room types, rooms that are different shapes and sizes, etc) but the core is pretty consistent, build a layout, obtain knowledge, solve puzzles.
+
+I'm also a huge fan of escape rooms, having done pretty much every one of them in my area as well as all of the ""box"" ones I've been able to find!
+
+This has left me a bit conflicted in terms of a core mechanic of the game. Should there be a timer?
+
+Escape Rooms have timers and they are all about solving riddles and puzzles. Blue Prince on the other hand did not have a timer but instead opted to have a soft room to room limit with steps, which allows players to sit in a single room and think or write down details about a puzzle for as long as they want.
+
+The game overall is a Sci-Fi game with a bit of a spooky/horror understand and a pretty dark storyline, at least aspects of it are.
+
+The way I have it setup right now is that the timer is Oxygen, but it is a soft timer as there are oxygen tanks you can obtain throughout the run to increase the overall time. Largely trying to balance a run to be in the ""up to"" 30 minutes range.
+
+On one side, this adds a bit of pressure and gives you a hard limit on how long you can explore before needing to reset with whatever you've learned. On the other side, it makes it harder to ""Write down"" information as you discover it and forces you make certain decisions like skipping through earlier rooms to give yourself more time in the later rooms.",mechanic_design,easy
+"Spatial Audio recognition - My white whale
+
+Hello,
+
+I posted this on r/gamedev a couple weeks ago but since it's design related I thought it might be interesting here as well.
+
+I just released my first game two weeks ago and I couldn't be more relieved to finally be able to check that off the bucket list! However, the game I released yesterday is not the game that I set out to design nearly two years ago and was a valuable (but informative!) lesson about biting off more than I can chew, as well as how sometimes the game you set out to design isn't the one that you end up getting. It's far too early for any sort of ""postmortem"", but I wanted to share about my struggle with my MAIN mechanic and how I finally surrendered to letting the game become what it was supposed to be, rather than forcing a square peg into a round hole.
+
+My original intent was to create a game where you sat in the middle of a 5 x 5 grid and used true spatial audio recognition, with the player's eyes ""closed"" to be able to determine the position of a ghost in the room. You would then use those audio clues in order to solve some sort of puzzle. I thought it would be cool to have players use their ears to solve a logic puzzle rather than relying on visual cues. At that time, I wasn't sure what the puzzle would be, but the mechanic was enough for me to get started on it.
+
+For reference from here on out, here is the layout of the grid. Space 12 (marked with a ""C"") is the center of the room where the player sits. The player's ""forward"" is up, toward the 10. I sure hope this shows up correctly pasted as it is. If it doesn't, imagine a 5x5 grid, 0 in the top left corner, incrementing downward, along the column.",dev_process,very difficult
+"We're making a game about controlling time and traveling through eras: Vikings, cyberpunk, ancient Egypt, the Wild West. Would love your honest take.
+
+We're a tiny team, literally two people, working on KUTO: The Lock of Time. It's a single-player action game built around bending time. It's still rough (early alpha), which is honestly why I'm posting now instead of later. I'd rather hear what's not working while we can still change it.
+
+The setup: you play Kuto, who jumps between eras, and each one is a completely different world. Post-apocalypse, vikings, a cyberpunk city, the Wild West, ancient Egypt, sci-fi. It's not a reskin each time. The enemies, pacing and threats change with the era (a few are in the gallery).
+
+Time isn't a side gadget here. It's the thing you actually play with. There are five Time Keys, and each one lets you cheat reality a different way:
+
+Recall: rewind a few seconds. Blow a jump and you just wind it back instead of reloading.
+
+Dilation: slow everything down. Bullet-time for tight platforming and fast enemies.
+
+Leap: a long dash forward through time, gets you to spots normal movement can't reach.
+
+Fracture: gravity stops behaving. Walk on ceilings, arenas flip, new routes open up.
+
+Stillness: freeze everything around you while you keep moving.
+
+Right now we're heads-down on a single demo level, short but properly polished, that teaches all of this without dumping a tutorial on you.
+
+So here's why I'm actually here: does the setting click for you? Does ""hop between eras and bend time"" sound like something you'd play, or does it feel done to death? Anything you'd cut or change? Be honest, we'll read all of it.",dev_process,easy
+"I second guess myself every other step in the design/ development process, is this normal?
+
+As the title says, I second guess myself in the design / development process a lot - often times I come up with a design for a prototype mvp or prototype a piece of the mvp and by the time i'm done with the implementation and I have it testable, I feel disconnected from the experience and fail to see 'the point' the fun or the vision that sparked it. Often times I don't get to have playtesters especially new playtesters to try it, and more often than that they are just pieces so trying them out wouldn't do much good unless it's at least one coherent gameplay loop or unless i explain the context thoroughly so they can imagine it (which i find questionable). I just want to know if this is a normal part of the process and I should just be pushing through hoping by the time I complete a loop it's gonna somehow work out, or if it's like a sign that i'm not on the right path. The fear is that testing and retesting has taken the fun out of the game and i cant see the game for the systems (the forest for the trees) how do you guys handle this? I've also prototyped and playtested quite extensively in a attempt to feel like i've 'probed the possibility space' diligently enough and each version did shed light on some good or unexpected ideeas / potential paths to pursue and also overall left me kind of numb to everything unless it genuinely combines something that can trigger my own curiosity. I guess another way to frame it is: should triggering my own curiosity be the benchmark or treated as a equivallent of triggering the player's curiosity? help...",dev_process,easy
+"We needed players to be able to kill nobles without losing. We solved it with medieval indulgences.
+
+We had a design problem we ran into on our latest prototype and I'd like feedback on the solution.
+
+The game is a food-taster sim. You inspect dishes for poison before they go to the noble court. The fail state is three minor mistakes, or one major mistake, the major one being a noble dies on your watch. Either gets you sent to the executioner.
+
+It’s called Your Meal, My Lord, and you can check it out on itch: https://chaostheorygames.itch.io/your-meal-my-lord
+
+Playtesters pretty quickly decided they wanted to kill the king. Some on purpose, some out of curiosity. The fail state was triggering when the player was having the most fun.
+
+While researching medieval church practices for unrelated character flavour, we came up with the idea for indulgences. For anyone unfamiliar with the history, the medieval Catholic Church sold pre-emptive forgiveness for sins. You paid up front, sinned later, and the books were balanced. A well-documented real thing which sounds bonkers.
+
+I now have an Indulgence as a consumable you can buy. It is a small golden badge that sits on the player's workbench. If the player would otherwise get executed, the Indulgence is consumed, and their strikes reset to zero.
+
+What I like about it:
+
+The fail state is preserved. You can still die. The Indulgence doesn't trivialise death, it makes it a resource problem.
+
+Crime becomes a budget. Players plan murders around their Indulgence supply. The question shifts from ""should I do this"" to ""can I afford to do this."" Closer to the player experience we wanted.",mechanic_design,somewhat difficult
+"What are people's thoughts on cheating the player?
+
+To clarify I mean situations where information or rules (explicit or implicit) are broken to engage the player.
+
+I believe the role of a Game Designers is to give players an experience, typically a positive one, but sometimes a negative one. I believe the way we go about this really shouldn't matter to players (within reason), but I see a lot of pushback from people online when they find out they've been cheated?
+
+Cheating can work for or against the player. Something like Assassin's Creed's nonlinear healthbar where the last pip is worth significantly more is cheating for the player. Your health remains unchanged, but the amount of time on the brink of death is maximised. On the other hand Mario Kart uses rubber banding, speeding up AI far behind to keep the race close and competitive, which is when the game is most fun. Players don't actually want to drive solo while the CPU trail them. Other examples are the bullet hitboxes in Bloodborne, which massively favour the player.
+
+Players seem to congratulate the former for being smart psychology while complaining about the latter for being unfair. All my experience is with singleplayer games, and I know multiplayer games has a much stronger expectation of balance and parity between players. I believe Gears of War multiplayer gave new players a 25% damage boost because ""experienced players can use the active reload to gain more damage anyway"".
+
+What are people's thoughts on these kind of techniques? Are players just angry because they accidentally got a peek behind the mirror, or should we avoid using them where possible?",design_theory,easy
+"Are endless collectible items interesting or just a frustrating waste of currency in online games/apps?
+
+For context, my team and I are developing a gamified language learning app. We recently realized we had a classic game design problem on our hands: players are earning coins for completing lessons, but there is absolutely no currency sink. We have an economy, but nothing to spend the money on.
+
+I pitched an idea to my team to introduce a digital collection system, specifically, a shop where players can buy unlockable eggs that hatch into various animals, accompanied by collectible cards that include the animal's name, country of origin, etc. The goal is to give long term utility to the coins and create a satisfying reward loop that keeps learners motivated to study daily.
+
+However, I want to understand the mechanics and psychology behind this before we actually code it create the images, so we can build something truly engaging rather than just a cheap add-on.
+
+This leads me to a few questions:
+
+When creating a collectible shop, is it better to have a realistic ""cap"" (e.g 100 items where you can actually complete the collection) or a massive, practically unreachable cap, such as 100 per month, increasing by 100 each month until it reaches a value that isn't infinite, but is actually quite high?
+
+What makes unlimited items feel valuable rather than just a cheap tactic to drain currency?
+
+How do you balance the frequency with which a user can buy a new item without breaking the game's economy?
+
+Any insights, resources, or examples of games that do this well would be hugely appreciated!",mechanic_design,easy
+"When players are given the choice to be good or evil, they always choose to be good. Are there any games that manage to prevent this? The title might be a bit of an exaggeration, but I’ve been gaming for about 20 years and have been watching others play for a long time. What I've noticed is that if given a choice, almost everyone chooses to be a good character, at least during their first playthrough. In fact, a BioWare producer mentioned on Twitter that 92% of Mass Effect players chose to be Paragon (the good character). And although I can't find the source, apparently Peter Molyneux once said something like this: 'My prediction is: all you guys, you’re just gonna be nice. Sickeningly, sycophantically nice to each other. And it makes me sick, because you know, in a game like Fable, we spent hours; we spent months, months and years crafting the evil side of Fable, and only ten percent of people actually did the evil side. Come on. You’re supposed to be gamers' And it’s not just Mass Effect or Fable. Even many non-RPG games without a formal morality system, I see that people always chose to be the good guy.
+
+Is there a game where the player struggles to choose when the game asks: 'Do you want to be a hero loved by everyone, or someone who breaks the laws and oppresses the innocent?' The only exception that comes to my mind is Frostpunk. Even though the game doesn’t have an explicit morality system, unless you play exceptionally well, you are sometimes forced to make 'evil' decisions because being 'good' could cause you to lose the game. Are there any other games like this?",player_experience,easy
+"Looking for feedback on a domino-based roguelite game idea
+
+Hi! I’m working on a small roguelite game built around dominoes, and I’d love to get some feedback from other game design people.
+
+The core idea is a Balatro-like structure, but instead of poker hands, the player builds chains of domino tiles. Each round starts with an “enemy domino” already placed on the board, so the player can’t freely start with their strongest tile every time. The player has a hand of dominoes, a few scoring attempts, and a few rerolls/discards per round. After scoring, the played dominoes go to the discard pile and the hand is refilled.
+
+During a run, the player can add new dominoes, remove weak ones, upgrade tiles, change their numbers, and apply special types or conditions to them. For example, a damaged domino could be harder to use but give a stronger scoring bonus, while a stained domino could have one erased side that counts as any number. I’m thinking of these types as a way to make individual tiles more interesting than just “a domino with two numbers.”
+
+The part I’m still unsure about is how to make the moment-to-moment gameplay more fun and less like simply placing matching numbers. I want the game to create interesting decisions: when to score, when to extend the chain, when to sacrifice a good tile, when to build around a weird modifier, etc.
+
+Do you have any ideas for mechanics that could make domino-based gameplay more engaging? Especially ideas for scoring rules, enemy pressure, tile types, risk/reward systems, or ways to make each run feel different would be very helpful.",mechanic_design,easy
+"How to make non-winners not feel like losers
+
+I built a daily game called Off By. Each day you get five questions about real-world numbers, and you lock in each guess with a slider. It then shows how far off you were - from the crowd and from the real number. It resets every day at midnight EDT, so you get a fresh set of questions each morning.
+
+The premise is ""Can you beat the crowd?"" After you answer the five questions, you get a results screen that tells you how you did. And if you won, it says ""I beat the crowd!""
+
+What I'm having a hard time with is the other version of that screen: the one for the player who didn't beat the crowd. I've tried several variations over the past few months and still haven't gotten it right. I tried ""The crowd beat me,"" but that was really discouraging. I tried just showing the score with no comparison - only how they did - but that was confusing since the number on its own felt meaningless.
+
+(I'm also working on a points system and a diamond-collection feature and could use advice there too, but I'll probably put that in its own post. Just mentioning it here because maybe I should think about focusing on that instead of ""you didn't beat the crowd"" ? Can I show an entirely different screen if someone didn't beat the crowd - just show them how many points they earned?)
+
+In the meantime, the game's live here: offby.io. If you intentionally play badly, you'll get the ""non-winner"" version and see exactly what I mean.
+
+Any suggestions for making players want to come back the next day would be hugely appreciated. Thanks in advance!",mechanic_design,somewhat difficult
+"How do you feel about positional card queue instead of direct card play in card games?
+
+Hi everyone, I'm developing a deckbuilder and would like to get your thoughts on the main card mechanic. The game is battle based, action card deckbuilder with damage/block like other deckbuilders before it. But use 2 mechanics of positional card queue and delayed card cost to create different gameplay feel and scenarios.
+
+Positional card queue: Instead of damage/buff/debuff enemy intent being fixed to trigger at end of turn, enemy intents are put on the queue as cards. At the end of turn, cards are resolved from left to right. So player has to take in account which card should be played before enemy action and which after. This grows complex as multiple enemy intent cards are present. The card queue mechanic is supported by a status mechanic that is tied to slot instead of player character / enemy.
+
+Delayed card cost: Strong cards instead of costing more energy to put on queue, have a higher ""time"" counter value. At the end of turn, these cards are not played but has their cost reduced by one. Player can choose to resolve their cards on queue in advanced, before turn's end for 1 energy. So player can play 2,3 cost cards this turn with additional energy cost, or later turn with positional cost.
+
+Combined these two mechanics, I find that the game can create interesting decisions and interesting scenarios, with gameplay having the damage/block timing factor rather than just pure values.
+
+Example queue:
+
+| | Player card (II) | Enemy card (I) | Player card (I) | | |...",mechanic_design,easy
+"Underrepresented concepts in game economies
+
+Been thinking lately about some economic concepts that don't appear often in games but that are crucial for our real life capitalist economy. There might me great potential in games to explore that and I don't know many that do.
+
+Debt & money as an infinite resource
+
+Money is a resource that can be infinitely replicated.
+
+Nations typically hold debt that far exceeds national income.
+
+Interest rate
+
+Somewhat linked to debt: the Economy is driven by adjusting interest rate up/down. 
+
+Low interest rates make debt cheaper and investments more profitable.
+
+Inflation (we all feel this one)
+
+Low interest rates may result in inflation if the production can't keep up.
+
+Also, inflation can happen if production becomes more expensive.
+
+Overproduction crises
+
+If you produce to much in e.g. Anno, it will just happily sit in your warehouse, no issues whatsoever.
+
+In the real world, companies face huge problems when they can't get their goods sold.
+
+Example: overproduction was one of the contributing factors to the Great Depression.
+
+Economic Cycles
+
+Strategy games tend to snowball infinitely (think of 4x games like Civ)
+
+However, our economy has boom and bust cycles. We have periods of expansion and contraction.
+
+Degrowth
+
+Number go up is nice but what if number go down is necessary?
+
+All in all I think there is a huge design space where games can try more to explain our actual economy.
+
+Any games you know of that include some of these concepts well? Any other concepts that I've forgotten to list?",mechanic_design,easy
+"Hot Take: 2D Fighters feel heavy. Why hasn't Mortal Kombat evolved into a 3D Arena game yet?
+
+Hello everyone, ​Watching the recent evolution of fighting games (especially the aggressive shift in Tekken 8 and the persistent rigidity of Mortal Kombat 1), I'm asking myself a pure combat UX question: Why are we still locked onto the 2D axis for franchises that have everything to gain by transitioning to a 3D Arena format? ​I feel the current 2D fighting game meta suffers from systemic heaviness. Gameplay has become a science of memorizing frame data and passive blocking in a corner of the screen. ​My idea is to pitch a formula shift (much like DBZ Budokai Tenkaichi 3 / Sparking! Zero but with the mechanical rigor of a Tekken) applied to a brutal universe like Mortal Kombat: ​More freedom, less heaviness: Being able to use dynamic sidesteps to dodge projectiles rather than just ""enduring"" block stun. ​True spacing game: Allowing zoning characters to exploit massive distances, forcing melee characters to use pixel-perfect dashes and counters to close the gap. ​Logical verticality: Heroes who fly or teleport should be able to do so in a full three-dimensional space, radically altering the tactical approach. ​My question to you: From a balancing perspective, what would be the biggest pitfalls of such a transition? How do we prevent the game from becoming a running simulator while keeping the visceral impact of the hits? ​Thank you for reading, and I look forward to your feedback and insights! ​Best regards, ​Kevin Roussel alias Tweek",design_theory,very difficult
+"Every event has to move you closer or further from your goal, or it's just window dressing"" — a designer's note from 1988
+
+I've been reading Jordan Mechner's journal from the early days of building Prince of Persia (1985–1989), and one entry stuck with me as a piece of design thinking.
+
+Late in 1988, his game wasn't fun, so he sat down and reverse-engineered why other games were. He looked at Pac-Man, Asteroids, Karateka, Lode Runner, and wrote down what they shared:
+
+You can tell at a glance how close you are to finishing.
+
+There are setbacks and small wins on the way -- and when a setback happens, you feel it's your own fault.
+
+You can hold off, wait for the right moment, then say ""OK… now"" and plunge into higher tension.
+
+A few entries later, he writes the line I keep coming back to: ""Every event has to move you closer or further away from your goal, or it's not an event, it's just window dressing.""
+
+The other thing worth stealing: almost nothing in the game was invented from scratch. The combat is traced frame by frame from a 1938 Errol Flynn swordfight (Robin Hood). The movement is rotoscoped from his brother running around a parking lot. The opening is the first ten minutes of Raiders. His line on it: ""innovation comes from combining things that haven't been put together before.""
+
+PS. I wrote a longer piece on the book, game, and what it taught me about long projects here (for those who are curious): https://domelian.substack.com/p/read-this-before-your-next-long-project",design_theory,somewhat difficult
+"Why 3 Options? Numerology in games.
+
+Want to know why so many games offer just 3 choices at a time? Slay the Spire with card picks, Hades with its boons, and many more default to just 3 options to pick from. Why exactly is that?
+
+Here’s why: It’s baked into our brain chemistry. There’s also specific reasons to use 2, 4, 5, or 8. Let’s talk about sets of 3 first.
+
+Our brains don’t usually judge the value of each option independently the way economists would prefer, we tend to judge by comparison.
+
+Extensive studies show that we irrationally like an option better if you offer us an extra option that is obviously worse.
+
+Likewise, we feel worse about a good option if we know we’re giving up another good option to take it. Offer me a free trip to hawaii and I’m thrilled. Offer me a choice between a free trip to hawaii OR a free trip to japan and I’ll still have a great time, but now I’m also imagining the trip I’m missing out on. It stings a little.
+
+We want players to feel good when making decisions, but we also tend to want those decisions to be a little difficult – espescially in strategy games. How do we make them feel better?
+
+Simple: Add a bad option!
+
+Bizarrely, by comparing our top 2 choices to an obviouly inferior option we feel a lot better about our final decision. Even if we randomly distribute the options without intending to match this pattern, it often happens by accident. You can engineer things so it happens more frequently too...",design_theory,somewhat difficult
+"What separates a meaningful tradeoff from a disguised tax on the player?
+
+One of the things I keep wrestling with in my current project is the difference between a tradeoff that feels rewarding and one that just feels like a tax on the player. The classic example is something like a speed versus defense choice. On paper it sounds like meaningful decisionmaking. In practice, players often just figure out the dominant strategy and stick with it, which means the tradeoff was never really engaging to begin with.
+
+I've been thinking about what makes a tradeoff actually land. My current theory is that it comes down to context sensitivity. A choice only feels meaningful if the correct answer genuinely changes depending on the situation. If one option is almost always better, you don't have a tradeoff, you have an illusion of one. But then you run into the balancing problem. How do you design situations varied enough that both sides of a tradeoff get their moment without it feeling artificial or scripted?
+
+I've also seen games handle this through player identity rather than pure optimization, where you pick the option that fits your playstyle even if it isn't theoretically optimal. That seems like a different but valid design goal.
+
+Curious how other designers approach this. Do you design tradeoffs around optimization, player expression, or something else entirely? And how do you test whether a tradeoff is actually working?",design_theory,easy
+"Why does optimal play so often kill the fun, and how do we fix that at the design level?
+
+There's a tension I keep thinking about in game design between optimal play and interesting play. In a lot of welldesigned games, the most effective strategy is also kind of the dullest one. Players who figure out the dominant approach just repeat it, and the game becomes a checklist rather than a series of meaningful decisions.
+
+Halo came up recently as an example of a game that nudges you toward using grenades naturally, without forcing it. The design creates conditions where grenades feel like the right call, not just the mathematically correct one. That's a subtle but important distinction.
+
+So the question I'm chewing on: how do you design systems that make the interesting choice and the effective choice overlap more often? Not through artificial restrictions or punishing efficiency, but through the ruleset itself creating genuine appeal for varied approaches.
+
+Some angles worth discussing. Does it come down to encounter variety? Resource asymmetry? Emergent interactions between systems? Or is it more about feedback, where the game communicates that stylish or unconventional play is being noticed and valued?
+
+Curious whether anyone has examples of games that genuinely nail this, or design frameworks that address the gap between optimal and interesting. Board games and tabletop RPGs welcome too, not just video games.",design_theory,very difficult
+"How do you design meaningful player choices when the optimal path is almost always obvious?
+
+One of the recurring challenges I keep running into when designing games is the problem of dominant strategies making player choices feel hollow. You want players to feel like their decisions matter, but if one option is clearly superior through basic analysis, the choice becomes an illusion rather than genuine engagement.
+
+I've been thinking about this a lot lately, especially in RPGs and strategy games where build variety is supposed to be a selling point. Theorycrafting communities will almost always converge on a meta, which is fine at high levels of play, but it tends to trickle down and flatten the experience for casual players too.
+
+Some approaches I've considered: hiding information so players can't fully evaluate outcomes in advance, introducing situational variance so no single option dominates across all contexts, and building in tradeoffs where every strong option costs you something equally valuable.
+
+But each of these has downsides. Hidden information can feel unfair. Situational design requires a lot of content. Tradeoffs can feel punishing rather than interesting.
+
+How do you approach this in your own design work? Is a dominant strategy always a failure state, or can it coexist with meaningful choice if the game is structured well enough? Would love to hear how others have thought through this.",design_theory,easy
+"Most games reward clever resource use, but almost none punish you for hoarding resources too safely
+
+Something I keep noticing across strategy and RPG games is that resource management systems almost universally punish reckless spending, but rarely create meaningful consequences for playing too conservatively. Think about how many games let you reach the final boss with a full inventory of healing items you never touched, or end a strategy campaign with a massive currency surplus you saved ""just in case."" The system technically worked, but did you actually engage with it in any interesting way? The few games that do push back against hoarding tend to use time pressure or hard caps, but those feel external and arbitrary rather than something that grows naturally out of the ruleset itself. I'm curious whether design patterns exist that make cautious resource accumulation feel genuinely risky or costly without making the game feel punishing or unfair. Opportunity cost is the obvious answer, but most implementations I've seen feel too abstract to actually change player behavior. Does this connect to a deeper tension in game design where players need to feel secure enough to engage, but threatened enough to actually use the tools you give them? Would love to hear examples of games that handle this well, or interesting theoretical approaches people have thought through.",mechanic_design,easy
+"Most games reward players for doing the optimal thing. What happens when you design around rewarding curiosity instead?
+
+A pattern I keep noticing is that rulesets implicitly punish exploration by making the optimal path so clearly superior that deviating from it feels wasteful. You learn the meta, you execute the meta, you win. Curiosity becomes a liability.
+
+Some games genuinely protect and reward curiosity as a firstclass mechanic. Outer Wilds is the obvious recent example, but the design principle shows up in unexpected places like Noita, certain roguelikes, and tabletop systems where the rules deliberately obscure efficiency to keep players experimenting.
+
+My question is about the ruleset level specifically. What mechanical structures actually incentivize curiosity rather than just allowing it to exist as a flavor option? A few candidates come to mind: incomplete information systems, nonlinear unlock trees where no single path dominates, and failure states that reveal something genuinely new rather than just resetting progress.
+
+The tricky design problem is that the moment players can compare outcomes, they will optimize. So how do you build a ruleset where comparison itself is difficult, or where the variance in outcomes is interesting enough that optimization feels less appealing than experimenting?",design_theory,very difficult
+"Picking a resource type for a 4X
+
+Hello, I'm currently working on a PvE 4X game where the player expand on an hostile content, increasingly reaching out to gather more materials.
+
+One of the design parameters I've been unable to settle with is the way to handle strategic resources. Roughly speaking there could be two choices
+
+treating them as stockpiles, slowly filling up.
+
+or only as available flux, without accumulation
+
+As I see it, the first solution is a classic one, gives more leniency to the player since they can wait until the opportunity arises then spend in bulk. You can pretty much attach a cost to most actions, creating a building in a city, buying a unit upgrade, creating a unit, etc.
+
+The second has the advantage of making each new resource available more impactful (ie if you get say 2 iron ores, you can afford two cavalries) and making it easier to restrict the total imprint of important units/buildings. But because the player may have a maxed resource usage, most actions must only cost time since we don't want the player to end up softlocked.
+
+I'm tempted to try the flux version for everything, but I'm afraid players could find this very limiting if they hit unit caps too fast. I think both system work but I'd like to hear about your experience with games implementing them.",mechanic_design,easy
+"I always get stuck and frustrated at level design
+
+I am a solo dev making all kinds of video games in my spare time. I create about 2 prototypes per week, from MtG-like card game clones to RTS, FPS and top down hack and slash games. I mostly just watch some gaming streams, and ponder if I can make ""something like that game, just tweak it to make it a little bit more complex"".
+
+Whenever I am done with creating the mechanics prototype, I try to create simple levels with a certain base line of fun-ness. I regularly end up with some textured blocks sitting here and there, some npcs mindlessly approaching the player, way too big maps with either too obvious or too hidden points of interest. Its dull, lacks flow, lacks diversity, lacks tension. After pondering for about a week on how to improve a level, I usually move on to a new prototype in a new genre, successfully implementing mechanics, again getting stuck at level design.
+
+The thing I actually yearn for is implementing progression systems, doing art, flavor, dialogue, customization, talent trees, such things. But without levels I never really get there. So I wonder: Did I not put enough effort into trying? Am I just not a level-design kinda guy? Do I lack the right learning resources? Am I doing something fundamentally wrong?",dev_process,easy
+"How do you design meaningful choices without overwhelming players with options?
+
+One of the hardest balancing acts in game design is the space between too few choices and too many. Give players too little agency and the game feels on rails. Give them too much and decision paralysis sets in, or worse, most options become irrelevant noise.
+
+I've been thinking about what makes a choice feel genuinely meaningful versus cosmetic. The best choices seem to share a few traits: clear tradeoffs, consequences that persist long enough to matter, and options that reflect different playstyles rather than obvious good or bad picks.
+
+But how do you actually build toward that in practice? Do you start by designing the consequences first and work backward to the choices? Or do you map out player archetypes and create options that serve each one?
+
+I'm also curious how this changes across game types. A realtime action game handles this very differently than a turnbased RPG or a board game, but the underlying design problem feels similar.
+
+Would love to hear how others approach this, whether you have a structured framework, lessons from past projects, or just principles you keep coming back to. What separates a choice that sticks with a player from one they forget the moment they make it?",design_theory,easy
+"Waiting in strategy games
+
+So, in most strategy games, the actions players perform are clicking a button to start progression towards something, such as constructing a building, recruiting troops, or moving armies.
+
+My thesis is that this isn't fun in isolation; it's prep work for. And the best experience you can get from it is ""gheez, finally!"". Which isn't really an ideal user experience.
+
+The general issue is that these loading actions have a predictable timeframe and outcome. That is to say, you get precisely what you ordered within a specific time. That is boring in principle. And I really don't get why it has to be that way.
+
+Fun games from risk and reward. Why can't these microactions follow that as well? They already have reward and cost, but not risk. Why not add one? E.g. when constructing a temple, maybe there is 10% chance that the building will collapse during the construction, and construction has to be restarted. Okay, so that might sound frustrating, but fact something can fail will transform the impression from ""gheez, finally"" to ""sweet, what did I get?"" Especially if the reward itself contains random quality variables, e.g. the house might turn out to be C-grade shack that collapses within 5 years, or A grade masterpiece that will last 100 years.",design_theory,somewhat difficult
+"Should you generally finish games that you play primarily for educational purposes?
+
+The majority of people here, I think, would agree that it is very beneficial for a game designer to play a lot of games.
+
+The problem I see is the trade-off between breadth and depth. If you aim to complete them all, or just most of them, your internal design reference library won't be as broad due to a simple lack of time and the fact that, mechanics-wise, most games show almost all they have to offer way before the endgame. It's not like you will double the amount of new mechanics you learn from a game just by doubling your playtime.
+
+So, being a non-completionist in that regard means you gain exposure to a much wider variety of core loops and systems.
+On the other hand, if you drop a game before finishing, you miss out on studying late-game pacing, difficulty curves, or level design.
+
+The optimal strategy obviously depends on your current goals. But when you have a limited amount of time to play games, how do you decide which goal to pursue: broadening your knowledge or deepening it?
+
+My approach is to drop a game once I understand its core mechanics and systems, and finish only those games that are highly relevant to my current project.
+
+How do you handle this?",dev_process,easy
+"What would a game even look like if the NPCs actually remembered what you said?
+
+I have been playing a lot of narrative games lately and I keep running into the same wall. You get these big dramatic interrogation scenes and then it is just picking from four dialogue options. It always breaks the immersion for me.
+
+Recently I started experimenting with ManyVerse, an AI game-building platform, and it got me thinking that this problem might actually be solvable now. What if you could type what you actually wanted to say and NPCs responded to the specific thing you said? Accuse someone without evidence and they react differently. Bluff successfully and they slip up. Build trust over time and they remember it later. The conversation becomes something you create rather than something you select from a menu.
+
+I put together a rough prototype to test the idea and every conversation felt different. It was messy and definitely not perfect, but it felt much closer to a real interaction than a traditional dialogue tree.
+
+Has anyone actually played a game that does this well? Not a tech demo, but a full game with meaningful stakes and consequences. I am curious whether something like this already exists or if developers are only starting to explore it now.",mechanic_design,somewhat difficult
+"How my homemade anti-piracy system brought me thousands of new players
+
+I'm a Steam solo developer who made Burgie's Cozy Kitchen, a small idle game about managing a burger joint that stands in the corner of your desktop. I do not condemn piracy, but like any developer, I try to prevent it. For a while, I was mulling over how I could prevent my game from being pirated, and one piece of advice I follow to the letter in my highscore systems is: 'Make the hacker think they've won.' For piracy, I did something similar. My system detects several common indicators of piracy. I have around 10 different triggers that on their own could cause false positives, but when many of them coincide, the probability becomes really accurate. When a pirate plays the game and progresses about ~1 hour in, these sensors turn on, creating a unique and fun experience. In my case, since it's a game where you run a street-level burger restaurant, all customers would start arriving dressed as pirates and pay with just one coin, leaving reviews like 'Pirates don't leave tips.' A few days ago, my game blew up in China after a Douyin streamer found it, and pirated versions started spreading rapidly alongside it, including a mobile pirated version I never made myself.",dev_process,Detailed account of a shipped anti-piracy system and its real-world results (viral spread in China); centers on a production/marketing decision and its consequences rather than a generalizable design principle or a specific in-progress system question.
+"Story justification for undo/redo in a game without time rewind abilities?
+
+Undo/redo is super common as a side mechanic for UX benefits. But in such cases, designers rarely try to justify it in game. So I'm interested in seeing more story justifications for it.
+
+To be clear, I'm not referring to games that focus on time rewind as a core mechanic(ex:braid). I'm asking about games that have undo/redo as a side mechanic and how they justify it in a game where the player doesn't have time rewind powers.
+
+Method 1: Precognition
+Framing it as precognition is a method. Katana zero does this. it's not exactly undo/redo but the restarts are so instant that it's close thematically.
+
+It has an universe drug that grants precognition abilities which lets the player restart a level undo they execute it perfectly. Then the game frames the run you did as a plan you made utilizing your precog and the player character execute it in reality.
+
+I suppose, even without precog, it can be framed as a planning phase.
+
+Method 2: Vision of the future.
+Another way I can think of is framing it as a premonition/prophecy. An example from an Anime: AoT has a line of special ability holders that can send their memories to the past.
+",design_theory,somewhat difficult
+"Using the ""Draw-Forward"" Formula
+
+The ""Draw-Forward"" Formula is one of my go-to design patterns. It’s one of the most useful tools for helping players 𝐟𝐞𝐞𝐥 𝐬𝐦𝐚𝐫𝐭.
+
+You can use it in almost any genre where players make build, gear, or loadout choices. It works extra-well in roguelikes, cardgames, and RPGs.
+
+How it Works:
+Create an Overpowered item or ability, then balance it by giving it a drawback. This pattern is sometimes called ""+2/-1"".
+
+Make a second item or ability that turns the drawback into an advantage.
+
+Putting them together creates a massive value swing. Draw-Back becomes ""Draw-Forward"".
+
+Why it Works:
+When we make strategic choices in games and are trying to play well, we’re looking for the ""best value"" option. However, our brains aren't great at assigning precise values to choices so they lean heavily on comparisons and safe heuristics. They're also feel losses more intensely than gains (the ""loss aversion"" cognitive bias).
+
+This is why we love free stuff. “Free samples”, ""Free Shipping"", and similar feel so good because our brains interpret them as all-upside. A bigger reward with a minor cost doesn’t feel as satisfying to consider, even if it’s technically a better deal...",design_theory,easy
+"If Chess was invented today, could it actually succeed in the modern gaming market?
+
+Imagine if ""Chess"" was just invented today and launched on mobile app stores or Kickstarter. No centuries of historical prestige, no grandmaster culture—just a brand-new abstract strategy game hitting the market in 2026.
+
+When you look at today's player profiles, mobile store dynamics, and the overall gaming market, it really makes you wonder how it would perform. On one hand, it’s an absolute masterpiece of game design. On the other hand, it goes against almost every modern market trend:
+
+1. The ""Perfect Information"" & Zero RNG Problem: Modern games rely heavily on luck and comeback mechanics to keep casual players engaged and make losses feel less punishing. Chess is brutally honest: there is zero RNG. If your opponent is better, you lose 100% of the time.
+
+2. Zero Meta-Progression: There are no skill trees, unlockables, battle passes, or daily quests. You don't grind for 50 hours to unlock the ""Queen"" piece. The game at hour 1 is exactly the same as the game at hour 10,000. Could a game survive today without those constant dopamine loops?...",design_theory,somewhat difficult
+"I wanted my game to have procedural generation but does it really need it?
+
+I am making a simple game where you go from room to room solving puzzles. At first I made some procedurally generated rooms where it would build some hallways, puzzle rooms, and a boss room. I made some prefab scenes that fit into the pieces I want. For the most part it seemed like it was going well until I started to think of what the game actually was.
+
+The game starts out with just a move ability. Then you get power ups to give you more abilities. You get push, dash, attack (bullet), jump. When you first start the game I want to gradually give the player the abilities to try to solve the puzzles. However, the puzzle of the room requires certain abilities. And you might not get those abilities if the proc gen doesn't give it to you. So now I have to know about every piece and how it connects to others versus just generic pieces.
+
+So in the long run I just abandoned proc gen and built out the levels how I think it would go. I might revisit it, but my question is:
+
+I wanted my game to have procedural generation but does it really need it?",dev_process,easy
+"What is it with Halo that makes me not underutilize grenades?
+
+or rather, what is it with other FPS/TPS games that makes me underutilize grenades?
+
+no matter what I never stocked up on grenades in Halo. You kill something, it drops one I immediately throw one. And yet Halo isn't that sophisticated when it comes to grenades; you can't cook them, no throwing trajectory preview, and older games have only 2 types of grenades which basically do the same thing.
+
+Metro Redux, Rise of the Tomb Raider, Resident Evil 2, Sniper Ghost Warrior 2, Medal of Honor. On top of my mind, those are the last few shooters I've played and finished where I seemingly almost forgot grenades existed (and they have different sorts of grenades no less)
+
+probably the only game that has me use grenades is CSGO, but thats mostly on memorization and muscle memory, and I use smokes more often anyway.
+
+I'm curious as to why tho? is it because in Halo its Q and not G like in other games? destructible cover (I can't recall whether Halo had it or not, or whether it was used to great effect)? fast throwing animation? or maybe is it just me all along?",player_experience,somewhat difficult
+"How would you feel about a spell crafting system with some RNG?
+
+Let's say t's a pretty generic magic system, where you spend mana to cast spells with defined effects. e.g. A spell might be called ""invert gravity"" and it does exactly what it sounds like, with a determinate limit on the duration and area of effect.
+
+Spell are created by the player. As you explore and encounter new things, you learn new spell elements that you can use. If you spend a lot of time near water, you might get elements like ""water,"" ""wave,"" or ""soggy.""
+
+When you want to craft a spell, you choose any number of elements to include or exclude. The resulting spell will follow your parameters as a guideline, but the details will be up to chance.
+
+Let's say you have these elements: Fire, thunder, wood, escape, turtle, wind, grief, distance, night, depletion.
+
+You craft a spell to include escape and turtle, but exclude fire, thunder, and wind. The result is a defensive spell that conjures a barrier around you, like a turtle escaping into its shell, with additional resistance to elemental damage like fire, thunder, and wind.",mechanic_design,easy
+"Automation without micromanagement, is it possible to keep depth while reducing control?
+
+In many automation/factory games, a lot of the challenge comes from micromanagement rather than decision-making, creating depth but also friction. I've been exploring whether an automation game can stay deep if the player focuses more on system design and less on micromanagement, shifting the player's role from directly controlling processes to defining rules and structure and letting the system operate. I've been working on a prototype called Syntaris, a graph-based system where modules connect through paths forming a network, workers move across it handling tasks automatically, and the player influences the system by placing modules in meaningful positions and shaping how the network connects. The depth comes from spatial decisions mattering (centralized systems efficient but fragile, distributed safer but slower), grouping into semi-independent clusters, and indirect control through logistics rules. Do you think minimizing micromanagement risks making automation games feel less engaging?",design_theory,"Somewhat difficult. Poses a genuinely general design question (can automation stay deep without micromanagement) and uses the poster's own prototype as a detailed, structured case study to argue a position, much like the Mina the Hollower or blame-target posts; classified design_theory rather than mechanic_design since the post's center of gravity is the broader question about the genre, with Syntaris serving as the evidence for an argued position rather than being an open, unresolved system question."
+"Making damage mean something
+
+Something got thru your defenses and hit your base. Ok, now what?
+
+I'm building a pressure management game set in deep space where you command an Outposts defense while you mine ore from asteroids to upgrade the Outpost. To make damage mean something I built a quadrant system as the outer layer of the Outpost. Each quadrant is tied to a critical system like shields or turrets. Damaging a quadrant causes a state change in the system its tied to. Shield integrity drops, turret fire rate falls and other more unique states. These states are gated by threshholds and have varying levels. Example from %100-%70 normal then from %69.9 to %50 minor degradation and so on. Quadrants can be repaired. They repairs are automatic and begin after five seconds of a quadrant taking no damage. And for every five seconds beyond that there is an increase in repair rate up to a hard cap. So I'm wondering is this in any way a smart or elegant solution to making damage mean something more than just a lower number on an HP bar or is it too much.",mechanic_design,easy
+"AI is terrible at System Design. Here's an Example
+
+I asked Gemini Pro to design a progression system for Chess The RPG, keeping a summary to 2 paragraphs, the kind of open-ended prompt common on design tests. It gave me a proposal with individual piece development and a meta-skill tree, but while these ideas look cool individually, they fail as a system: boards become unparseable with every piece leveling independently, weird incentives arise like trying to keep pieces alive for XP, and skill tree progression multiplies complexity with no one able to track opponent options. If allowed to write up these proposals in an official-looking document, a less skilled designer could easily be tricked. My approach: make Generals or Classes that have dedicated armies with unique combinations of pieces, leveling the general by total moves played rather than survival, unlocking alt-pieces over time. This is why AI can't be relied on for system design: it's fundamentally weak at identifying how baskets of disconnected designs interact.",design_theory,
+"In game design, we can talk about negative emotions more honestly
+
+In real life, talking about frustration is generally not welcomed. If school or work or relationship gets difficult, well, you pretty much have to make the most out of it. If you start complaining, or even drop out of a system, people tend to maeginalize you to say the least (essentially labelling you as a loser).
+
+But in games and especially PvP games, we can talk about negative emotions more openly. We expect players to flame, to get frustrated and even quit. We look at drop off points honestly and think about how to improve the system by creating more incentives and better reward structure, record dev vlogs about what upcoming changes to improve player retention, and gathers both positive and negative feedback.
+
+In this sense, games actually allow us to learn about ourselves and each other more honestly. We try to understand the full range of human emotions rather than just adapting to socially accepted behaviours.",player_experience,somewhat difficult
+"What goes into making a good murder mystery game? How could it be made to have multiple threads?
+
+We're designing a point and click murder mystery game with friends, and we're stuck at a point involving the possibility of more than one suspect being guilty. I find it interesting to create a game where each suspect is equally likely to have done the murder, and depending on certain factors, the ending changes as far as who is guilty. This resulted in two combined ideas: a system where how you act during interrogations affects your relationship with a character (like a Telltale game), which influences who the game picks as the murderer, or a system where you interview all suspects, pick the one with the most suspicious alibi, and the game decides that's the guilty party, leaving it up to you to prove it. Is there a way to create a system like this where you can explore 'what if' scenarios of different suspects being the killer, similar to the multiple endings of the Clue movie?",mechanic_design,"Easy. Two candidate systems already drafted for the poster's own project, asking which direction (or another) resolves a specific narrative-branching problem."
+"Can consequence replace complexity? Testing a football management game where the UI is just your messages app
+
+Most management games solve the engagement problem by adding more, more stats, more screens, more systems to master. I've been exploring whether you can go the opposite direction: strip everything back to conversations and consequences, and see if that's enough to hold people. The format is a football transfer window, played entirely through a messaging app, with no interface beyond that, no dashboards, no menus. To test it, I've been using a Wizard of Oz methodology where I operate the characters manually, letting me validate the concept before building anything. The first test produced an NPS of 9/10 and genuine emotional investment in the characters. The main design problem that emerged: without a visible world state, decisions felt like they existed in a vacuum, since the player knew intellectually that consequences were real but couldn't feel the weight of them.",dev_process,"Describes a Wizard-of-Oz prototyping methodology and the results of an actual test, centering on the validation/testing process for an early concept rather than a finished mechanic decision or a generalizable theory claim independent of the project."
+"Combat in survival crafting games is boring and nobody talks about it enough
+
+Why is combat in survival crafting games so much shallower than in ARPGs like Path of Exile and Diablo, which have skill trees, abilities, and weapons providing endless build combinations? Most open-world survival craft games have somewhat dull combat; I remember friends bouncing off Valheim's combat specifically. I hadn't seen a good combat system in this genre until Enshrouded, which has different skill trees and build variety. When we started working on Good Heavens! RPG in 2021, Enshrouded wasn't around yet, but we had a similar approach: a essence system with three skill trees (Warfare, Trickery, Sorcery), abilities bound to items across four slots, and a unique feature where NPC factions and cultures give different combat boosts. Curious whether other developers have tackled this problem and whether players actually engage with deep combat systems in this genre or tend to ignore them.",design_theory,"Somewhat difficult. Diagnoses a genre-wide pattern (survival-craft combat being shallow vs ARPG depth) using named comparisons (Path of Exile, Diablo, Valheim, Enshrouded) as evidence, then describes the poster's own already-built system as a counter-example to the pattern; classified design_theory since the core argued claim is about the genre, with the poster's system serving as supporting evidence rather than being the open question itself."
+"A design exploration: cooperation through shared situational awareness rather than fixed roles
+
+I've been thinking about why many co-op games don't quite capture the feeling of real-world teamwork. A lot of cooperative games fall into a few categories: several people doing something together that could be done alone, fixed-role games where cooperation comes from artificial restrictions, or load-sharing games where there's just too much work for one player. In contrast, real-world teams cooperate because systems are complex, information is incomplete, and maintaining a shared understanding of reality becomes a task in itself. That led me to a design question: can maintaining a shared mental model of a complex and partially observable reality become the primary activity of a cooperative game? I've written up a design exploration around that idea, where cooperation emerges from uncertainty, diagnosis, planning, and communication rather than hard role restrictions.",design_theory,"Argues a general claim about why most co-op games fail to capture real teamwork and proposes a structural design principle (shared mental model as the primary activity), independent of being tied to a single finished mechanic decision."
+"Design Tests: How much do you weigh game-specific fit?
+
+A question for those who have been in hiring / review / decision-making positions, I'm wondering how much you or your studios typically weight game-specific fit on a design test vs. other factors.
+
+I submitted a test - one of those ""design X for our game that incorporates a/b/c elements"" - while I had a few hours of play with the studio's product and a general understanding of the problems they need to solve. I think I did an okay job of solving those problems, but after spending more time with the product post-submission I'm beginning to identify some mismatches between my approach and what I'm recognizing now as core rules in how they build 'X'.
+
+I can bring those observations with me into an interview and I feel confident that they'd land well if I did, but I'm worried about getting the chance to do that in the first place and whether or not there's any value in sending those notes along ahead of time.",dev_process,easy
+"Shared World AI Driven Text RPG
+
+I've spent the last few weeks building a system that I think its new.
+
+Im still not sure if its new because no one came up with the idea before or if its just dumb, thats what I would like your perspectives on.
+
+Being very brief, the game is a text AI RPG, not so different from AI dungeon and other simillar products on the surface. The main difference is that all players are actually interacting with the same world. If player A kills an NPC, player B will see it dead and maybe some consequences of his death will ripple through the story.
+
+Of course there were many issues with concurrency, consistency, etc. I had to do some tradeoffs in that regard, but i feel that the basic principles work. Still not clear if it will scale well though, but that is something to discover only if I get some traction.
+
+Does this system looks like something interesting for you? Do you see any obvious reason for it not being built previously?",dev_process,easy
+"Designing supply line interception for a tick-based async MMO — instant loot vs. carry-and-return risk. Which fits better?
+
+Solo-building a mid-paced grand strategy backend with 60-second logistics ticks and 15-second combat ticks. The scenario I'm testing involves a 3-tile food route crossing a waypoint tile where an enemy cavalry army is stationed, with an interception formula and resolution that credits a percentage of in-transit goods to the raider instantly on a hit. Right now loot is instant with zero physical risk to the raider after the tick resolves. I'm planning a carry-and-return mechanic where raiders must physically march goods back before raiding again, making cargo vulnerable on the way home. The problem I'm designing around: an active player can react to a raider marching home, but an offline player has no recourse at all, creating asymmetric risk. Is that a reasonable tradeoff, or does it punish casual play too harshly?",mechanic_design,
+"Why don't more games use simple graphics but deeper world simulation?
+
+Modern hardware is ridiculously powerful, but most of that extra power seems to go into graphics: higher resolution, lighting, textures, draw distance, cinematic presentation. What if a studio deliberately kept the graphics simple, but used that spare hardware budget to make the world far more dynamic, with NPCs that remember more, items that are functional instead of decorative, persistent world state? Animal Crossing is a good example of the frustration: you can buy a scooter or arcade machine but most don't really do anything. Games like Stardew Valley, RimWorld, and Dwarf Fortress show people will accept simpler visuals if the systems are deep enough. So why don't more studios make games that are visually simple but mechanically rich? Is it because graphics are easier to market, or because players say they want depth but actually buy visual spectacle?",design_theory,
+"Designing a dungeon-crawler where rarity affects abilities, not base stats, looking for feedback on this approach
+
+I'm designing a dungeon-crawler where a party explores dungeons to kill enemies and collect materials. For equipment, loot can be acquired through two main sources: RNG drops and crafting.
+
+The balance system I've been considering works like this: an item's base stats are completely independent of its rarity. So a common longsword and a legendary longsword would deal the same base attack damage, but the legendary version would have additional abilities, like bonus fire damage or damage reduction. To increase base stats, players would upgrade equipment using materials gathered from progressively harder dungeons.
+
+Basically:
+
+Rarity determines special abilities and unique effects
+
+Upgrades determine raw stat power, gated by dungeon progression
+
+
+Is fully decoupling base stats from rarity a good design choice?",mechanic_design,easy
+"I replaced the hex grid with a Voronoi diagram. Here's what changed in how the game feels.
+
+Early builds of Crystal Wars used a standard hex grid, but every game felt like it was played on the same board just shuffled. I switched to a Voronoi-generated field with Lloyd relaxation. What got better: front lines became organic since every cell has a different number of neighbors, map variety is real since the topological variety means two players have wildly different experiences, and there's no 'correct direction' since spatial advantage is completely local and emergent. What got harder: tutorialization, since players struggle to instantly see what counts as adjacent on an irregular field, and reading the front line, since Voronoi borders are jagged and counterintuitive. Curious if anyone else has shipped a game with a non-standard grid/tessellation, what did you trade away, and how did you handle the readability issues.",mechanic_design,"Presents a concrete, shipped change to the poster's own game's grid system with real before/after tradeoffs already implemented; centers on a specific mechanic decision the poster made for their own project, with the closing question inviting comparison rather than reopening an unresolved thesis."
+"Simultaneous Turn Based Game
+
+It's a gameboard where two players have a party of 3 characters with different skills, fighting in a battleground. A turn has 4 rounds, each meaning both players made a move with a character, and the game resolves each round. I'm making this prototype where the system is not only turn-based but also simultaneous. I found a flaw: when characters interact at the same time, if Char A attacks Char B while Char B moves away, the order of resolution determines whether the attack lands. This gets more difficult across non-adjacent rounds too, since a character might move far away in round 1 and a different character's attack in round 4 references a position that's no longer valid. My solution was to give attacks priority over movement, but this hinders player choices and simplifies the game. I'm thinking of removing this feature, but before doing so, I want to hear other people's perspective.",mechanic_design,"Somewhat difficult. Long, technical description of a genuine resolution-order edge case in the poster's own simultaneous-turn system; classified mechanic_design since the entire post is the specific, unresolved mechanic problem rather than a general theory claim, even though it reads almost like a postmortem of trying a fix that didn't work."
+"How would you design live ops for an endless runner without making it feel like daily chores?
+
+I'm working on a mobile endless runner and trying to think about the game design side of retention/live ops before adding too many features. The core loop is simple: the player runs/swings, avoids obstacles, collects resources, and slowly progresses. The theme is about a monkey family surviving and growing over time. My current design question is how an endless runner can create meaningful daily/weekly goals without making the player feel like they are only doing chores. Ideas I'm considering include daily missions connected to survival or family progression, weekly event maps where rewards slowly reduce if ignored, unlocking new family members with different abilities, short event modes that change the objective rather than just the reward, and progression that gives emotional purpose rather than just higher numbers.",mechanic_design,
+"I've spent months rebuilding the combat system for my indie card game around a simple question: why do so many card game battles feel solved once you've seen the cards?
+
+Every attack in my game can be reacted to, countered, dodged, blocked, or clashed. This creates a lot of decision points, but it also created another problem: how do you make an offline opponent that remains interesting after 100+ matches? The AI doesn't cheat. It can't see your hand. It doesn't get bonus resources. It follows the same rules as the player. Instead, the challenge comes from adaptation. My hope is to create the same kind of replayability older games had, where the content wasn't necessarily endless, but mastery kept players coming back. For designers here: what makes an AI opponent feel genuinely smart to you? Adaptation? Long-term planning? Bluffing? Human-like mistakes? I'd love to hear examples from games that got it right.",mechanic_design,
+"Using AI as a thinking partner for game narrative. Curious what workflows actually look like.
+
+Started getting into game design from an unexpected direction. Narrative and worldbuilding first — figuring out the craft while building.
+
+Using AI through the process: feeding it rough story ideas, stress-testing internal logic, asking it to poke holes in lore I've sketched out. Some of it works. Some of it produces confident nonsense that sounds right until you read it twice.
+
+Curious about the practical side from people who've been here longer:
+
+Where in your process does AI actually help versus slow you down?
+
+Does anyone have a system for keeping it anchored to your established world instead of hallucinating new rules?
+
+Did it change how you think about narrative design, or just speed up what you were already doing?
+
+Not looking to debate whether it belongs. Just want to understand how real workflows look.",dev_process,easy
+"Designing Gameplay Through Economics
+
+I'm working on a prototype where gameplay is driven by economic forces. Right now I've been looking at a simple price model, p = base x demand / supply. I was experimenting with grain, which is harvested once and decays over time, and found some interesting behavior: if there is just enough grain for the year, the price is constant; a surplus means the price starts low and drops significantly; a shortage means the price starts high and rises quickly until it hits the maximum. This seems like a natural way to interface with trade and other mechanics, and it leads to some possibly interesting gameplay like engineered grain shortages. I'm curious if anyone else has designed or run into interesting gameplay coming out of pure economics. I think Victoria's markets-as-a-game design is really interesting, and I recently picked up and enjoyed Offworld Trading Company.",design_theory,"Names a specific economic mechanism (price = base x demand/supply) and traces concrete emergent gameplay consequences from it, citing real games (Victoria, Offworld Trading Company) as supporting evidence for a general principle about economic design, rather than asking for help with the poster's own unfinished system."
+"A design proposal for MMOs: PK should only occur when there's economic conflict — and here's how to build that system
+
+Most open-world PvP MMOs have a core problem: meaningless killing is allowed by design. In real-world conflicts, violence only occurs when there's something at stake. EVE Online gets close to solving this but still permits griefing with no structural penalty. My design framework: PK should only be viable when there's genuine economic conflict; if a player kills another with no resource-based motivation, the system treats it as griefing with an instant ban. For the new player problem, I propose a time-limited subscription giving AFK invincibility and emergency warp with operator review. For risk adjustment, an optional subscription provides item insurance. Scarcity emerges naturally from the PK risk structure rather than designed rarity. What are the obvious holes I'm missing?",design_theory,"Presents a full structural design framework as a general proposal for the MMO genre rather than the poster's own specific in-progress system, arguing why existing approaches (EVE, traditional MMOs) fail and proposing a new structural principle."
+"Extraction shooters have a loot problem - what if you connected them to a persistent world?
+
+The extraction genre has a loot problem, and I think the fix is connecting it to a persistent world. You start playing, you start extracting stuff, you accumulate gear, and then there's nowhere meaningful to put it, so it piles up until it breaks the risk/reward loop and developers always answer with a wipe. Here's the idea: what if the extraction shooter was connected to a persistent world-building side, where you have two modes sharing one economy: the extraction side with classic high-stakes raids, and a persistent world (solo or with friends) where the stuff you extract actually goes somewhere and compounds over time? The design challenge would be economy balance, making sure neither side trivializes the other. Does this already exist somewhere and I'm missing it, or is this a real gap?",design_theory,"Diagnoses a structural problem across an entire genre (extraction shooters) and proposes a general design fix independent of any specific project the poster is building, framed as a genre-level argument rather than the poster's own unfinished system."
+"Gearomancer is currently in development for PC and is listed on Steam.
+
+
+
+Hi everyone,
+
+
+
+We’re working on Gearomancer, a PC bullet hell action roguelite currently in development and listed on Steam.
+
+
+
+I wanted to ask a design question about enemy collision and hitbox readability.
+
+
+
+In fast-paced bullet hell games, players already need to read projectiles, enemy movement, character position, UI, and environmental effects at the same time. Because of that, we’re trying to decide how clearly enemy collision should be communicated.
+
+
+
+Should enemy hitboxes be very obvious to the player, subtly implied through the enemy model, or mostly understood through gameplay feedback after contact?
+
+
+
+Also, would you make enemy collision more forgiving than the visual model, or should it match the creature shape more closely?
+
+
+
+I’d love to hear how other developers/designers approach this.",mechanic_design,easy
+"A small qualitative study on the gap between what players say about a live-service game and how often they still play it
+
+I have just completed a personal UX research project on player retention in Helldivers 2, a live-service co-op shooter where the paid layer doesn't just sell cosmetics, it gates access to weapons, equipment, and abilities players use to play the game. The recommendations all ended up built around one line: gameplay items should be earned through play, cosmetic items should be the paid layer. My degree is in anthropology, so the qualitative side is familiar ground, but I have no formal UX or game design training; everything here is built on free courses and trial and error. The work underneath the principle is a thematic analysis of 1,143 Reddit comments, six semi-structured interviews, and three observations of high-skill gameplay via livestreams.",player_experience,"Presents a structured study of what players actually say and do, drawing a conclusion about the gap between stated preference and observed behavior, which is centrally about player experience/behavior rather than the mechanics of a specific system the poster is building."
+"How we designed my favorite card in Hearthstone
+
+When working on Rise of Shadows, we had an extra slot for a mage Epic and not much time left to experiment. I knew a lot of mage players loved playing a bunch of spells in one turn, but once they played a bunch of cards they had nothing left over, ending the game in a bang or leaving them defenseless. So I proposed Mana Cyclone, which gives players a bunch more spells as a reward for casting spells, restocking their hand. It worked. Mana Cyclone made a huge splash on release, and even if you lost the game, getting off a big Mana Cyclone felt like a win, creating a mini-quest during the game. The Mini-Quest Formula: a 100% clear objective completable in 1 interval, the objective gives the player an excuse to do something they wanted to do anyway, and optionally the objective has room to be completed exceptionally well.",design_theory,
+"The balance between too few choices and too many is genuinely one of the harder problems in game design.
+
+Too few and players feel railroaded. Too many and they either freeze up or start ignoring most of what you've built. I've been wrestling with this while working on a turn-based strategy game. Every time I add a new mechanic or option, I have to ask whether it actually expands the strategic space or just adds noise. A couple things I've been trying: asymmetric tradeoffs where nothing is strictly better but different options suit different playstyles, and staggering complexity so players aren't buried in decisions before they have enough context to make them meaningfully. Do you start from a core set of choices and build outward, or design wide and cut back? And how do you actually test whether a choice feels meaningful versus feeling like a chore or a coin flip?",design_theory,
+"What makes NPC relations and interactions system good?
+
+Hello everyone,
+
+I am toying a bit with the idea of politically focused rpg set in ancient Rome. You know, rise to power type of thing, where you as a player start as a nobody and have to “battle” your way up top.
+
+I am looking into making it more of a sandbox type of thing where player would have lots of ways to gather supporters, through good connections, reputation, blackmail,… so your typicall real world “mechanics” for climbing the political mountain. Ancient Rome is a good setting, at least I think so, since most of the politics way focused in one city and it had very well fleshed out political system.
+
+So, obviously, such game would have to rely a lot on NPCs and your interactions with them.
+
+So I wanted to know what you guys consider good mechanics that make for fun social interaction system with NPCs.",mechanic_design,easy
+"Advice regarding incremental skill tree / shop design
+
+I'm developing a bubble shooter themed incremental game. I've tried to do a lot of things differently from the classic node-buster loop, and add some action and allow skill to advance players faster, while staying loyal to the active incremental loop where players always progress and can't really lose. Another thing I didn't want to do is create a more linear skill tree, so I've created a shop that makes upgrades available pretty fast, gating only 2 or 3 upgrades. This has been a huge headache balancing-wise, and I'm sure once people play the demo they will break something. Considering the design of my game and shop, should I allow upgrade refunds in this type of game, or is that unfair to players who try to find the most optimal way to finish? If so, what is a practical way to do that?",mechanic_design,Easy. Specific unresolved system decision (refunds yes/no) tied to the poster's own in-progress shop/upgrade design.
+"Do players generally prefer mechanics to ""pay"" for a powerful move rather than have a cooldown or limited # use?
+
+The most common methods of limiting powerful actions tend to be cooldowns, limited number of uses, or a resource/energy cost. As I think about it, I find myself thinking paying a resource cost is almost always going to be more fun, since it empowers the player by giving them choices and allows for a system of collecting and managing resources. But I can't shake the idea that cooldowns and limited-use feel artificial, since they still encourage using your strongest moves over and over, but the rules just pop up a stop sign. The resource-based approach forces the player to reckon with their own action economy and requires thinking ahead, so it feels like it's almost always going to be more fun and engaging for a tactical scenario.",design_theory,
+"How do you turn AI-driven text into an actual game system instead of a chatbot?
+
+The issue is: if a player can type anything and the AI simply continues the story, the result may be entertaining for a few minutes, but it is not necessarily a game, because it often lacks structure, friction, rules, failure, pacing and meaningful state. My current thinking is that the AI should not be the core system; it should be constrained by game systems such as authored scenarios, persistent game state, risky actions with probability, NPC memory, and limits on what the AI can invent. The main concern is control: if the AI has too much freedom, it drifts and contradicts itself; if the system is too rigid, the AI adds little. So the design question is: where should the boundary be between authored structure, mechanical rules and AI-generated variation?",design_theory,"Argues a general claim about the design boundary needed between AI freedom and mechanical structure across this entire category of games, independent of one specific finished system; proposes a framework rather than presenting the poster's own unfinished build."
+"Comparing how 6 TCGs handle win conditions (and one is clearly the worst)
+
+Every TCG needs a way to win/lose, but how you win completely changes what the game feels like. I analyzed Magic, Pokemon, Vanguard, Digimon, Riftbound, and Marvel Snap to see which health systems work best. Magic's life totals are simple and proven but boring. Pokemon's prize cards are creative but flawed, since you lose 6 random cards at start and the winner gets rewarded, creating a snowball effect. Vanguard's damage zone turns damage into a mana system, which is actually pretty clever. Digimon's security stack creates attacking tension but feels swingy. Riftbound's points race works great for free-for-all. Marvel Snap's location control is simple but the entire game was built around it. My take: best systems make losing feel like you get something back.",design_theory,"Compares multiple shipped games' win-condition mechanisms with specific, named mechanics and traces why each works or doesn't, drawing a general conclusion ('best systems make losing feel like you get something back'); a real argued claim across multiple cited examples, not the poster's own unfinished system."
+"What's the case on keeping reworking key game mechanics?
+
+I have been playing it since release, bought numerous battle passes, etc, but I never seem to keep up even with new players. Why would a mechanic that was complex enough requiring mental overhead and inconvenient (requiring 5 or more clicks and a bunch of open windows) be changed? I felt like I already learnt the nuts and bolts of the whole tear system, upgrading it, spending, memorizing where to put all these pouches, just to be rug pulled by the new system. Some time ago my inventory's capacity got reset for no reason and I spent thousands of lucent to increase it just to get it wiped away with no reimbursement. At this point that's just poor game design. Draft a feature and stick to it to improve it, not throw it away. Draft a proper crafting or player economy model.",player_experience,"Centers on the poster's frustration with how mechanic reworks and resets are experienced as a player, rather than presenting a system to build or arguing a generalizable design theory; closer to a personal reaction to design decisions than a structured claim."
+"How do you make melee fighters viable in a setting where everyone has guns?
+
+In our last session, our unarmed combatant out-damaged our burst-fire combat rifle in the same engagement, running Stars Without Number. SWN solves the melee-in-a-gunfight problem with shock damage (melee attacks deal a small guaranteed amount of damage even on a miss) and an auto-hit once per scene for the Warrior class. The reason this matters in a sci-fi setting specifically is that choosing melee means being out of cover and right up in enemies' faces, so the shock damage compresses that risk enough that the build makes sense without obsoleting ranged. Lancer uses a minimum-damage tag on specific weapons, PF2e shifts stakes through the crit/fumble spectrum. What's the most interesting design solution you've come across for this specific tension?",design_theory,"Names a specific mechanism (shock damage, auto-hit) from a real shipped game and traces why it works to solve a genre-level design tension, then compares to other named systems (Lancer, PF2e), functioning as an argued claim rather than the poster's own unfinished system."
+"Tag-Team Platform Fighter (Trying to figure out the ins and outs )
+
+Me and some friends are working on an upcoming platform fighter called Monstrous, a 2D Hand-Drawn platform fighter starring monsters and cryptids. The main gimmick is the Tag Team mechanic seen primarily in traditional fighting games like Marvel vs Capcom and Skullgirls. We like the idea, it's just we don't know what else should be changed or kept the same to work in tandem with this gimmick. Should we make the movesets smaller to make room for the tag team mechanic? How big or small should your team be? How will existing mechanics in platform fighters clash with our new mechanic? We're still debating things like multiple super bars vs one big super, and whether the assist button should call your next character to perform a specific attack before dipping.",mechanic_design,
+"What makes a base-defense threat feel fair when it bypasses walls instead of destroying them?
+
+I’ve been thinking about base-defense systems where enemies don’t simply chew through walls. Instead, the danger comes from bypasses: tunneling, climbing, disabling power, forcing the player to leave safety, poisoning resource routes, etc.
+
+On paper I like this more than the usual build → repair → rebuild loop, because it turns defense into active problem solving. But it can also feel unfair if the player reads it as “the game ignored my base.”
+
+What signals make this kind of threat feel fair? Early warning sounds? Visible pathing? Specialist enemy silhouettes? Counter-buildings? Tutorial encounters?
+
+And where is the line between “clever enemy that makes my base design matter” and “cheap enemy that invalidates my preparation”?",mechanic_design,easy
+"Most 4X games punish you for losing. Almost none punish you for winning badly, and that's a shame
+
+In real strategy, how you win changes what comes next. Burn a city to take it and you have the territory and a degraded supply chain. Break a treaty to gain ground and every other faction just updated their model of who you are. The genre almost never models this; you win the tile and the calculation ends. Crusader Kings gets close, reputation is a real resource that closes doors downstream. Into the Breach gets close, every action has a cost even in a perfect turn. What I keep noticing: the games where winning feels meaningful are the ones where a bad win is actually worse than a narrow loss. Most designers never build that in because it's harder to communicate and players complain about it until they understand it.",design_theory,
+"Help me with implementing judicial system in my region managing game!
+
+I started developing a hobby project where the player takes on the role of a new province governor in the Roman republic period. The idea is to be somewhere between a city builder and a Paradox grand strategy game, where everything is simulated while the player influences the region through policies rather than placing buildings directly. I was thinking about making the player handle judicial things as well, either through events where the player decides punishment, or being presented with the crime, accuser, accused, witnesses and evidence and deciding guilt and punishment, where the wronged party's social standing could create consequences like riots or unemployment depending on the verdict. What do you think about these ideas?",mechanic_design,
+"any ideas on making a horror maze gameplay fun?
+
+I am a new game designer and developer with an idea for a shooter game, but as a first project for a team of 3 it's too big, so we'll be making a prequel first set in the same universe, in a place called 'the deep maze' with a dangerous creature/person called the reaper. I'm not sure how maze-y the deep maze should be, since I'd want to force players to split up through the power of game design. The original gameplay idea is to have players play through the maze, putting markings on the ground or a map, then playing it again with more knowledge until they reach the end. The maze part seems complicated because mazes in games tend to feel frustrating, which I don't want, because I want players scared of the reaper, not of opening the game again.",mechanic_design,
+"How to merge 2 games audiences into one without keeping them separate from each other?
+
+Fortnite has separate games inside it (Rocket Racing, Lego Fortnite) with their own audiences that don't overlap, which makes merging genres into one game a critical problem: if you fail to satisfy both audiences at once you lose both, as seen with Onrush, Micro Machines World Series, and Super Animal Royale recently splitting off Super Animal World as a separate game. Forcing players into tasks that require switching games isn't good because being forced to play against your will isn't fun. Micro Machines Mobile tackled this by locking gamemode selection behind a currency paywall, leaving random mode as the only free option, but that feels too greedy. Any ideas on how to merge two audiences into one?",design_theory,"Somewhat difficult. Names multiple real, specific shipped-game examples (Fortnite's sub-games, Onrush, Micro Machines, Super Animal Royale's split) as evidence for a genre-level design problem and asks for a general solution, rather than presenting the poster's own unfinished system; the line between this and a resource-request is thin since no original answer is proposed, but the structured comparison across named games pushes it to design_theory."
+"Should classes be balanced to similar win rates, or is intentional difficulty variation a feature?
+
+I’m building a dungeon solitaire game with multiple playable classes, and the win rates across them are all over the place. Some sit in the high 80s, while the weakest is down at 34%.
+
+My first instinct was to “fix” this: nerf the easy classes, buff the hard ones, and pull everything toward a tighter band. But the more I sit with it, the more I wonder if that’s the wrong goal.
+
+What if the spread is the feature? A new player or someone who just wants a relaxing run picks an easy class, and someone chasing a real challenge picks the 34% one. The class roster basically becomes a built-in difficulty selector, just framed through theme and playstyle instead of an “Easy/Hard” menu.
+
+Thoughts?",mechanic_design,somewhat difficult
+"I'm having a hard time know what to do with this game
+
+The game mechanic is pretty cool and playtests are going well, but I have an issue explaining the goal besides finishing every puzzle. The real goal is to gather resources to buy buildings in your village, requiring placing roads from your village to your resource tiles and clicking on the village to buy and place constructions, upgrade existing ones over time. The issue is I cannot find the right way to present the roads to players right now; most of them don't get the 'gather resources' part, which is pretty problematic. I also cannot find the right way to make them understand how the village works. The game is only a prototype for now, and I'm focusing on the main mechanics so there's not a lot of content at the moment.",mechanic_design,
+"Why does espionage feel so hard to make satisfying in strategy games?
+
+One issue I keep running into with espionage systems in games is the lack of meaningful feedback. With a normal military or economic system, you can usually estimate what you need, but with espionage, the whole point is that information is hidden, so how am I supposed to know how much to invest in defense or spy networks? If I get sabotaged, the intended reaction is paranoia, but without useful feedback, the decision often feels unsatisfying, becoming boring or automatic (splitting spies evenly because 'I guess I should'). Espionage needs secrecy to work thematically, but decision-making needs feedback to be interesting. Are there examples where espionage feels both secretive and strategically satisfying?",design_theory,
+"I am stupid! I withheld Rewards (even more than that) in a Roguelike...
+
+While I developed my Roguelike Deckbuilder game, I felt too many cards were filling the decks, and finally came up with the idea to have a 'Card Reward Probability' for fights. The point is, I have bad cards too, and therefore needed to lower the chance to remove cards. For a few months I was fine with it, but now I recognized, with some feedback, that it took almost all reward and success feeling out of the fights when you did not get a reward. I now removed the Reward Probability and now show Predicted Difficulty and the Rarity Level instead. Even a bad reward which you might later skip feels a lot better. So always think about what you are doing and also listen to the players!",dev_process,"Walks through a system the poster built, found didn't work via playtesting feedback, and changed; the content is the journey of iterating on a feature in response to real feedback, not a finished mechanic question or a generalizable theory."
+"How would you design a Ludo redesigned as a Tactical Multiplayer RPG instead of just a classic board game?
+
+I'm exploring what if Ludo had deeper strategy, player progression, and a more competitive multiplayer loop, keeping the familiar foundation of simple turns and dice movement but adding RPG-inspired mechanics, tactical decision-making, and character-based progression. Instead of only relying on dice luck, I'm experimenting with ways to make each move feel more meaningful, like unique abilities, collectible units, strategic choices during movement, or risk-reward decisions that change how players approach the board. Does a Ludo-inspired multiplayer RPG sound interesting, or does it risk moving too far away from what makes Ludo fun?",mechanic_design,
+"How to design Artifacts for Roguelite Gamemode
+
+My game takes place in multiple different worlds from different genres (Magic, Tech, School, Mystery) but I didn't worldbuild very deeply so there isn't much reference, and I struggle translating theme to gameplay and vice versa. My roguelite gamemode has 3 artifact types: Minor (stackable), Major (one of a kind), and Mental (debuff you while costing currency to dismantle). When there isn't a problem to solve, how do I come up with new artifact ideas? Is roughly 50 artifacts enough for a diverse run? Is there a problem with artifacts that are a 'must-get' each run? Is it a requirement for artifacts to synergize with each other? How do I design artifacts in a way that changes how you play?",mechanic_design,
+"What kinds of game mechanisms do people want in Elder Scrolls 6?
+
+Given the delays in production and advancement of console generations and AI/LLM technology, what systems could Bethesda implement into Elder Scrolls to make it stand out? I'd love to see a modernization of Oblivion's Radiant system supercharged with AI, daily cycles based on needs instead of routines, the game dynamically recognizing the player character based on their achievements, competing guilds again, natural disasters occurring in-world, a more robust magic system, vehicle combat, pirating with ships, and the ability to change the landscape of the game based on how the player plays (building up a town through good deeds, or draining it through theft and violence).",player_experience,"A wishlist of desired features framed around how the player wants to feel recognized and have the world react to them, rather than a specific system being built or a generalizable design claim; closer to player-perspective wants than a mechanic or theory post."
+"Creating an adventure themed card/ttrpg-like game
+
+I've been working on a cooperative tabletop game focused on exploration, decision-making, and risk management. Players move through randomly generated environments, revealing events, locations, and encounters that shape the experience as they go. The goal is to create a system where choices matter, when to push forward, when to rest, and whether to engage with uncertain situations. Time is always advancing, so every action has a cost. I'm aiming for something dynamic and replayable, with emergent moments rather than scripted outcomes. Still refining the design, but I'd be interested in thoughts on systems that encourage meaningful player decisions without adding too much complexity.",mechanic_design,Easy.
+"Realistically, aren't loops a bit of...bullshit?
+
+I've had difficulties working on my GDDs, especially on gameplay loops, because everything I wanted to write down felt incredibly obvious. One described loop says: what the player is trying to achieve, what's keeping the player from achieving this goal, and how the player is rewarded. That can describe any game; in Super Mario Bros you're trying to reach the end of the level, the platforms are keeping you, and you're rewarded with a new level, but that's definitely not where the fun from Mario comes from, it comes from game feel, pacing, and music. I think for gameplay loops to achieve actual relevance, they need to be less represented and make room for other designing processes.",design_theory,
+"How evil would it be to make lore notes burnable?
+
+So I got this whole dynamic fire system in my game, but it's a challenge to design obstacles that my players can't just burn their way through.
+
+Fire destroys shields, some consumables, and non-platemail/chainmail clothing. But then, I made the lore notes, and I was like... These are made of paper. Paper burns, you know?
+
+I'll have a checkbox to turn burnable notes on and off. But, it would be pretty funny if I left it on by default, right?
+
+Maybe if I just had some text pop up at the lower middle section of the screen saying something like ""Note destroyed, lost forever"". That way players wouldn't just miss all the notes that got burnt on accident. They'd know they messed up.",mechanic_design,easy
+"How to make Extraction Looter Shooters work with procedural generated maps?
+
+Extraction Looter Shooters are games where players compete to scavenge an area for loot and extract before someone kills them and takes their gear. I have yet to find a game where the map itself is procedurally generated to make a new battle arena every day, week, or season. The benefit of keeping the map consistent is that players can easily familiarize an area with the loot they need, you don't have to make all the assets required for a procedural map to feel different, and a truly random map can break the flow of gameplay and the number of 'lanes' used to guide players into conflict areas. But I'd love to see how people would make this idea work.",design_theory,"Diagnoses why an entire subgenre design pattern (consistent maps) is common and proposes exploring the inverse, framed as a genre-level design question rather than a specific system of the poster's own in progress."
+"Looking for suggestions/inspiration for setting the stage of a Boss ""Atmosphere"". Including but not limited: Intros, deaths, phase changes (2d preferred)
+
+Looking to add some 'oomph' to my 2D action sidescroller boss presentations to make them feel more memorable. I've got a handle on typical juice features like screenshake, colour flash, and screen turning red on death. But I'd love to hear suggestions that stayed with you for my own inspiration. Examples for me are Hollow Knight/Silk Song and the Mega Man games. A specific example: Nightmare King Grimm in HK's DLC is only the second boss to get a title card, even bows to the Knight beforehand, and the arena is designed to feel like a dance with a banging soundtrack.",mechanic_design,
+"How much Research is enough
+
+Hello, I’m currently designing a psychological horror ARPG. The premise is that you play as a young knight whose goal is to protect everyone, but his own overprotective nature slowly leads him to destroy the very things he wanted to save. The game aims to create horror through isolation, paranoia, and reality breaking experiences.
+
+Right now, I’m working on writing the characters’ psychological behaviors, so I’ve been studying topics like moral injury, apophenia, psychosis, and similar concepts.
+
+My question is: how much is enough? How detailed do characters really need to be, and how deeply do you usually study psychology or related subjects when writing characters for your own projects?",dev_process,easy
+"Implementing new areas during early access (and post launch expansions)
+
+I'm curious about the best way to implement new areas in games with open and interconnected world design. Subnautica and The Long Dark were initially released with a limited number of biomes and expanded their map toward their 1.0 state. For interconnected worlds, how are future entrances prepared before their implementation? What if it wasn't initially prepared in the first version of the area? What about open worlds, where entire borders are the entrance to new regions that weren't there before? What are satisfying in-game justifications for new areas and entrances to suddenly exist, and how can this late addition be communicated to players?",dev_process,"Asks about the production-side problem of how to plan and communicate map expansions across early access and post-launch updates, which is about the development/release process rather than a specific in-progress mechanic or a general design claim."
+"Designing boss fight for casual auto-shooter with a fixed player position
+
+I'm working on a 2D game where the main gameplay loop is based on hitting targets by rotating the character in 360, with the player locked in position in the centre of the screen and bullets fired automatically. Each round allows the player to upgrade abilities and unlock 3 bigger skills (AoE bomb, laser, freeze). After all 3 are unlocked, we're planning to introduce a boss fight, and that's where my biggest problem starts. I'm struggling with making the fight not too boring but also fitting the casual player base, combined with no player mobility being especially challenging. Nothing is 100% set in stone except the locked player position.",mechanic_design,
+"How much of horror comes from level design, and how much comes from lighting?
+
+While designing a psychological horror game, I've been thinking about something that came up repeatedly during testing. When players described areas that felt unsettling, they often mentioned the lighting first, but when we looked closer, many of those spaces were already uncomfortable because of the layout itself: long sightlines, narrow corridors, dead ends, and uncertainty about what might be around the next corner seemed to create tension even before lighting was considered. If you took a well-designed horror environment and lit it completely neutrally, would it still feel unsettling, or is lighting doing most of the heavy lifting?",design_theory,"Names a specific observed pattern from testing (layout creates tension independent of lighting) and uses it to argue a general claim about what produces horror atmosphere, rather than asking for help finishing a specific level."
+"Which games have done wordless storytelling well?
+
+By wordless I mean no dialogue or text in the game, relying on art/sound being fine but the best design conveying story through mechanics. Looking at Ico, Journey, Inside, Brothers a Tale of Two Sons, Gris, and Rime, common points I find are: mechanical metaphors (in Brothers, twin brothers controlled by different gamepad sticks shows they're two halves of a whole; in Journey, weak movement becomes greater with someone guiding you), ending twists that recontextualize the journey, and abstract symbols that raise constant questions the player latches onto. What other games have done wordless storytelling well, and can you find other common points between them?",design_theory,"Names specific mechanical metaphors across multiple shipped games (Brothers' twin-stick control, Journey's jump mechanic) and draws a general conclusion about what makes wordless storytelling work, functioning as a real argued claim rather than just gathering examples."
+"What are the pros and cons of unlocking crafting recipes by discovery?
+Discussion
+I'm making an open-world survival game where all biomes are accessible from the start, but I don't want crafting to be level-based like Ark or other survival games. I want a ""discovery-based"" crafting system, similar to Valheim: find the resource, unlock the recipe. But since Valheim's progression feels too linear for my taste, I want to mix the freedom of accessing biomes (like in Ark) with that discovery-based crafting system.
+
+Does this make sense? What are the potential downsides or balancing issues of removing level requirements entirely? Player level will only be related to skill points and unlocking player abilities.",mechanic_design,easy
+"Me and some friends are making a Social Deduction game, similar to BoTC or ToS. The role list is a hodgepodge of original ideas, classic S-D roles and references. The game definitely needs balancing but I'm not sure exactly what parts work, what needs improving and what needs cutting.
+
+For context, one of said friends has also coded a Python interface to help with the management of the games, so that removes some of the heaviest burdens from the GM. But overall, what are people's thoughts? Overall, the people we play with sometimes struggle to keep up with additions and changes that we make, so on top of fixing it balance-wise, if there's any sensible streamlining that can be done then I'm all ears!",mechanic_design,
+"How would you make a world react dynamically/difficulty increase based on the player base's exploration/knowledge?
+
+How would you make exploration a required game mechanic that affects everyone's gameplay/experience? What if fog of war reappeared in areas that have not been charted in a while, and danger increases in these shadowed areas, or energy/labour cost is increased in these fogged areas? Concepts that inspired this: Warcraft's superstition about Kobolds and The Darkness, Made In Abyss's curse that punishes ascending the deeper you go, DanMachi's dungeon that changes state on a whim requiring constant flow of information, and Wildstar's Paths system that gamified filling out the game's lore.",mechanic_design,
+"I am trying to build a war game/risk analyst sim. Would ppl be able to tell me what sucks/is good?
+
+I'm really interested in the risk analysis aspect because of the work I do. I set out at first to make analysis models, used them to back-test data from real conflicts, and then thought about gamifying it. I'm working on building something I can use for predictions and analyses, but also turn into a decision-based strategy game. I have several gauges measuring tension, and several types of actions and sectors those actions can occur in with different actors. I wanted to make it so when an action is selected there are animations imitating those actions, but haven't figured out how to do that yet.",mechanic_design,Easy.
+"Turn based mechanics transposed to a conversational system
+
+I'm working on a Life simulation game and trying to step away from the classic Sims pie menu, considering social interactions as a confrontation like Flyting in AC Valhalla. The thing is, all I can find when looking for such mechanics is related to turn-based combat games, even though it can be seen as a combat-like system. I can't find anything related to the mechanic itself as a system broken down outside that context. Do you have any recommendations on where I could find such info? I also found a comment about a game called Signs of the Sojourner whose deck system looks a lot like what I'm trying to build for social interactions.",mechanic_design,
+"Games with great first person unarmed/fist vs fist combat?
+
+I'm looking for inspiration regarding an original superhero action/RPG combat system. I want to incorporate basic unarmed combat along with some abilities, but not to the extent of games like World of Warcraft and other ability+cooldown based combat. Skyrim's unarmed combat feels realistic with vibration feedback on each hit; Oblivion lets you hold block instead but punches don't have the same weight; Apex's punch feels impactful similarly to Skyrim; Marvel Rivals playing as The Thing has punches that feel similar to Skyrim through sound and hit markers. I'd appreciate any advice and input on what makes unarmed combat feel good.",design_theory,"Compares multiple shipped games' unarmed-combat feel and what makes them work, but is framed as gathering inspiration/examples for the poster's own project rather than a defended general claim; closer to a request than a fully-argued theory post, though there's no specific system of the poster's own yet to call it mechanic_design. Classified as design_theory since it's evaluating what makes a design pattern (unarmed combat feel) work across multiple named games."
+"Single precise heater vs. a chain of constant heaters?
+
+I'm working on my automation game, STEEL GULLET. The game features a thermodynamics system, but I've run into a design dilemma regarding how heating should feel to the player in terms of convenience and engagement. Initially, the player placed a furnace and manually set the exact temperature, but typing in numbers is the worst UX and the furnace feels overpowered. My alternative is a chain of different heaters with fixed values to reach a target temperature, eliminating manual typing and making the mechanic more balanced, but I'm worried building a chain of 5 heaters might get annoying and overwhelm the player in the build menu.",mechanic_design,
+"How do you balance long-term base attachment with the need for replayability?
+
+I'm working on a base-building game with some RTS-style combat, and I've hit a bit of a design wall. I've built a faction system to encourage replayability, but I'm struggling to balance it with my other goal of wanting players to get attached to their city, optimize the economy, and watch their settlers go about their day. It feels like those two goals contradict each other. I'm trying to figure out if there's a way to keep that 'home' feeling while still giving players a reason to start a new game. Do you view starting over as a 'loss' of progress, or do you actually enjoy the reset?",mechanic_design,
+"More Cozy Questions - ""Build / Share"" your own quests feature
+
+One of the ideas I had to add value to my game post main campaign is to add a built-in GUI quest creator where you can assign starting points/conditions, set up objectives and completion/fail conditions. The end result would be saved as a local file that could be shared with others. I'd actually be doing the construction for myself, so I can add more quests easily via the game itself instead of putting everything in code. So here's my question: if a game you liked had this feature, would this be something you'd use to build/share/play quests designed by others in order to keep playing the game?",mechanic_design,
+"Making a cooking mini game
+
+I'm working on a project involving working at a restaurant/cooking food for house guests but am struggling with how I want the cooking to work. Idea 1: timer-based, doing things in the right order according to a recipe under a time limit, but I would hate playing this minigame myself. Idea 2: button prompts, where every action has a code, and at work the prompts disappear, requiring memorization, but I feel like it could result in button mashing. Another issue is what the fail state/retry should look like: do players restart infinitely until they get it right, or only have one try with points earned based on how good they did?",mechanic_design,
+"What's your approach to balancing a game economy?
+
+I'm working on a game where players build industries that consume resources and produce other resources, with buildings having upgrades/modifiers that affect production. I'm struggling with how to decide how much a building should cost, how much profit it should generate, how powerful upgrades should be, and how to stop one strategy from becoming the obvious best choice. At the moment I'm mostly guessing numbers and tweaking them as I go. How do you usually approach balancing an economy in games like factory builders, tycoons, or management sims? Spreadsheets, formulas, simulations, or just playtesting?",mechanic_design,
+"Digital graveyard
+
+Imagine a massive multiplayer game or RPG where a quest sends you back in time to the 'old servers' from like 10 years ago, but instead of the town being empty, all the original players are still there. Since real time travel isn't a thing, developers would use AI to scan the literal history of chat logs and voice data from real players to create a 'ghost clone' of that player's personality, slang, and playstyle. You could walk up to an avatar of your friend from a decade ago, bring up an old inside joke, and the AI would actually reply like they used to. Has any game tried doing something like this yet? What do you guys think?",mechanic_design,
+"Struggling with designing Balanced bossfights.
+
+I'm making an FPS game and working on the final boss, struggling with designing it: a Gojo-type hand/leg combat robot that can deny gravity and hover, uses magic and martial arts. I've learned about the triangle design principle of Strength, HP and Dexterity, but the problem is if I make the boss fast with lots of HP, I have to reduce damage and it ends up weak; if strong with lots of HP but slow, it doesn't hit; if strong and fast with low HP, it's OP and defeats the player fast. I wish there was a 4th element to this because I can't find the sweet spot balancing these 3 elements with a character.",mechanic_design,
+"How to measure and balance user experience / gameplay?
+
+I'm trying to make an idle/puzzle game and quickly get drawn into spreadsheets and data, and all balance changes become a tedious job. I started asking myself what kind of experience I want to provide and what is the interesting part of gameplay, and should I define it on a high level first and then measure it down to balance? Or does any meta rule become obsolete/boring and is creative chaos actually good for gameplay? As an example, my game has a loop: ingredient -> potion -> effect -> access to another ingredient. How do you evaluate/measure/balance around progression in your games?",mechanic_design,
+"Should AI be the narrator, not the game master?
+
+The more I think about AI-powered text adventures, the more I feel that AI shouldn't be responsible for running the game. The game systems should handle state, rules, progression, resources, risk, and consequences, while the AI's role would be to interpret player intent and present outcomes. For those working in narrative design, RPGs, interactive fiction, or AI-driven games, where would you draw the boundary between authored systems and AI-generated content? What absolutely must remain mechanical for the experience to feel like a game rather than an endlessly accommodating chatbot?",design_theory,
+"How do you make base expansion feel like a strategic commitment instead of just “more space”?
+
+In a lot of base-building games, expansion eventually becomes automatic once the player can afford it. I’m more interested in expansion as a tradeoff: more room and production, but also longer travel, bigger defense surface, more power/logistics strain, harder recovery if something goes wrong, etc.
+
+What systems have you seen that make you pause before expanding without making the game feel like it’s just punishing you for growing?
+
+Examples from base builders, colony sims, survival games, tower defense, or strategy games are all useful.",design_theory,somewhat difficult
+"Question on Game design
+
+Currently in my game, I am making a 2D platformer where there is a unique day/night cycle. I have two PLANNED weapons but I have a sort of problem. During the day, enemies detect you easily, and you have to fight/snipe them to survive, but during the night, enemies have a harder time spotting you, but if they do, you are instantly killed. That has been the plan from day one, but I just now realized I don't know a meaningful way to add stealth to a 2D platformer without making the solution obvious (like adding an obvious second pathway with less enemies or better vantage points). Do you all have any ideas?",mechanic_design,
+"What game controls/mechanics did you learn way too late or not learn at all while playing?
+
+There are a few moments in my gaming life where I remember seeing someone else play a game and realized there are whole controls or mechanics I just never knew about, and it always makes me feel very stupid. I was watching someone play a Pokemon mod and saw them click and drag the hand icon in the Pokemon PC to select and move multiple Pokemon at once, despite having played since I was 5. I was curious if anyone else had similar moments, or if there are any famously unexplained controls or mechanics in games that make a huge difference.",player_experience,"Centers entirely on the personal experience of discovering an unknown mechanic and the feeling it produced, with no system being built and no general design principle being argued."
+"What Academic Papers Exist on Combat-Oriented Player Playstyles?
+
+For my Bachelor's thesis I'm researching boss battle design and how different players approach combat situations differently, with the goal of creating player profiles/playstyle categories. I already know frameworks like Bartle's Player Types, but I'm specifically looking for literature focused on combat/fighting playstyles in games, for example aggressive vs defensive players, risk-taking, tactical behavior, kiting, resource management, and adaptability. I'm struggling to find academic sources that define or categorize these kinds of combat-oriented playstyles.",player_experience,"Forced-fit resource request: the requested subject matter is about how players behave and approach combat, so it's routed to player_experience rather than left unlabeled, per the planning.md forced-fit rule."
+"Should players be able to gain fleets directly from PvE content?
+Discussion
+I'm building a session-based space strategy game with 160K planets per session 
+
+To speed up reaching the mid-game, I'm adding NPC planets with 3 tiers of complexity and rewards.
+
+Besides resources, attacking an NPC planet has a 20% chance to let you capture part of its fleet. I also added a technology that multiplies the fleet and resources gained from NPC planets, so they remain relevant beyond the early game.
+
+What do you think? Is fleet capture is an interesting reward, or would it be healthier for the game if NPC planets only provided resources?",mechanic_design,easy
+"What would you like ?
+
+Hey guys, first time solo dev here. Had a wake up call a few days ago (ty to everyone who was rough) and I figured out that great games come from something you love, but also something that solve the need of players.
+
+That said I'm making a psychological horror with a heavy puzzle side. I am curious, out of those who played these types of games, what did you feel was missing regarding puzzles? Repetitive templates? Boring fetch quests? Feeling lost and going in circles? The fact that you could brute force some puzzles?
+
+I'd really like to know what the playerbase is feeling, what you guys would want",player_experience,somewhat difficult
+"Should I replace my ""Energy"" (Mana) system for cooldowns?
+
+I'm building an ARPG with combat similar to Elden Ring (it requires timed blocks/dodges, etc). I've had a few players mention that they don't enjoy a stamina/energy system when using abilities; they would prefer cooldowns instead. Should I redesign my ARPG's combat to use cooldowns or keep letting players spam abilities until they run out of Energy? Your max energy increases as you get stronger throughout the game.
+
+For context, the abilities currently using my Energy system include:
+-Dodge Roll
+-Jump Attack (heavy AOE)
+-Chain Lightning (magic AOE)
+-Summon Minion",mechanic_design,easy
+"Does my open world game need guidance?
+
+My game is an open world sandbox where progression requires crafting, leveling and boss fights, and there are no truly hard progression gates beyond raw strength. Part of the fun thus far has been finding new materials and bosses unprompted. It begs the question: how do I give guidance to players on what to do and where to go next, or should I give guidance at all? Do I design the map to be linear enough to route each boss fight, or use NPCs/UI to tell players what to fight next? Or do I keep everything unexplained and leave players to create their own goals?",mechanic_design,
+"I made a video about how games choose their land design. Does this framing make sense?
+
+I'm working on an economy simulation game, and I made a short video about one design problem I ran into: what kind of land should the game actually have? The video talks about discrete vs continuous maps, 2D vs 3D, flat worlds vs spheres, square tiles vs hexes, and resource generation. The main argument is that a map is not just a visual background, it decides what problems the game can create. I'd really appreciate feedback on whether the explanation is clear, especially from a game design perspective.",design_theory,Argues a general claim (a map decides what problems the game can create) that frames a whole category of design decisions (map type) rather than asking for help with one specific unfinished mechanic.
+"Global effects in multiplayer games — smart or messy?
+
+In my cardgame prototype Shady Guests, 'spy' cards trigger effects that impact all players plus a small bonus for the active player: everyone draws or passes cards, everyone adjusts a shared 'attention' track, then the active player gets a small extra benefit. The goal is to create tension and chaos and reduce kingmaking, but I'm seeing mixed results: some players love the interaction, others feel they lose control over their strategy. When do global effects add depth vs just noise? Any good examples where this works really well?",mechanic_design,Easy.
+"Knowledge as meta-progression — can memory-driven growth carry a replay-heavy loop?
+
+One thing I should clarify — this is not just Outer Wilds with procedural maps. There is real mechanical progression: remembered abilities from past lives carry forward (combat techniques, cultivation methods). The knowledge determines which ability path opens next. A player who discovers the hidden sect in run 3 unlocks disciple-level identities; a player who uncovers the immortal realm gains access to that tier. So it is a hybrid: story knowledge is the key, remembered power is the lock it opens.",mechanic_design,easy
+"Forcing a strategy vs letting the player make their own?
+
+The former is something akin to Zelda, where bosses and certain enemies are immune to everything but a certain item, forcing you to use it. The latter means the player can experiment with their tools, allowing more creative strategies. Both have pros and cons, with the former allowing more spectacle and controlled fights but being more limiting in options, and the latter being more player-freedom fights at the cost of feeling kinda empty or bland. Are there examples of ways to remix the system, or even merge both together?",design_theory,
+"Demo Design Question : Separate Curated Map or Part of the Full Open World?
+
+I'm making a co-op game where players guide a chaotic flock of sheep across dangerous terrain, building paths, gathering resources, and trying not to lose the entire herd. I'm currently preparing a demo for Steam and hesitating between making a small separate demo map designed specifically for pacing/funny moments, or unlocking around 20-25% of the actual full game map. I'm scared the second approach might feel boring or too slow for a demo. What do you guys think works better for co-op/sandbox games?",dev_process,Asks about a demo/release strategy decision (how to scope a Steam demo) rather than a mechanic of the game itself or a generalizable theory.
+"Are timed territory fights better than one huge shared canvas?
+
+I am thinking through a social canvas design problem. One big shared canvas creates huge emergent moments, but small groups can feel like they do not matter. Timed smaller zones make individual groups matter more, but they may reduce the chaos that makes the format special. For a game where groups place pixels and defend territory, would you rather have one giant persistent map, smaller timed battle zones, or both with a global map plus match/event zones? Curious from a design point of view, not just marketing.",mechanic_design,
+"Is there any great writing on Ludonarrative Resonance?
+
+Ludonarrative resonance is the concept of a game strongly communicating its ideas or themes through interaction rather than narrative, something only communicable through video games. I think few games truly nail it, but it's at the heart of some of the best works of the medium. Does anyone know of any writing about this concept? As a developer I'd love to do some reading and research on how to implement this into personal projects. If you have any great examples of games utilizing ludonarrative resonance, let me know.",design_theory,"Forced-fit resource request whose subject matter (a named design concept, ludonarrative resonance) is itself a general design theory topic."
+"What would make autobattlers feel fresh again?
+
+I still think autobattlers are one of the most interesting strategy formats: drafting, positioning, economy, synergies, adaptation, all compressed into short decisions.
+
+But it also feels like the genre has become harder to innovate in.
+
+What would make an autobattler feel fresh to you again?
+
+More player-created units? More roguelike progression? More unpredictable builds? Less fixed meta? More personality in the characters? Something else entirely?
+
+Curious what people think the next real evolution of the genre could be?",design_theory,easy
+"What are some common game design tropes that look like they're adding depth, but actually don't?
+
+I'm talking about mechanics that sound interesting on paper, or make a game seem deeper/more strategic, but in practice end up being busywork, false choices, or systems players quickly ignore. Examples might be crafting systems where one option is obviously optimal, skill trees with lots of choices but only a few viable builds, survival mechanics that become routine chores after the first few hours, and huge open worlds filled with repetitive activities. What do you think?",design_theory,
+"Is making a game design wiki still a good idea in 2026?
+
+I am beginning work on a small rpg game and would love to know if its a good idea to use a wiki as a form of game design documentation. Regardless if a wiki is the best way forward, I would love to gather some good resources for learning more extensively on how to design games that include lots of complexities within crafting and progression, such that you would find in an rpg. For context, I will be doing this with a relatively small team where none of us have experience in rpg designing.
+
+Much appreciated ",dev_process,easy
+"I'm building a two-player body-controlled cooperative installation in Unity. Looking for feedback on the interaction design
+
+I'm working on a small interactive prototype where two players use their body movement to control characters/arms on screen, based on moving, grabbing, pushing and throwing objects together. I'd love to know if the interaction is understandable from watching the video, whether the movement/control looks fun or confusing, what kind of cooperative mechanics would you add, and what visual feedback would make the actions clearer.",mechanic_design,
+"What small interaction details make first-person building feel satisfying instead of fiddly?
+
+I’ve been thinking about the tiny bits of feedback that make building/placement systems feel good: ghost previews, snapping, rotation increments, cancellation, sounds, resource previews, blocked-placement feedback, etc.
+
+In first-person survival/building games, what detail made you think “this just feels right”?
+
+I’m especially curious about examples where the system stayed readable under pressure (intense FPS combat), not just during calm building mode.",mechanic_design,easy
+"Does Ticket to Ride count as a political game?
+
+From repeatedly playing Ticket to Ride, it does seem to count as a political game: 3+ players in open competition, able to arbitrarily affect different players' game state, with a visible metric to determine who's winning at any given point. After playing with new players, someone commented how people were afraid to 'be assholes' by intentionally stopping each other's track plans. This seems to be a common trend in political games, and the reason those games are harder to get casuals to repeat-play.",design_theory,
+"What advice would you give to someone about to start learning game design?
+
+I'm a 26-year-old office worker who's always enjoyed playing video games. Lately I've been feeling disconnected at work and have started thinking seriously about a career change. Game design interests me, but I have zero experience or background in the industry and would essentially be starting from scratch. Where should I begin, what's the most effective way to learn, and what are some common misconceptions or unrealistic expectations about this field I should avoid?",dev_process,"Easy. Career/learning-path question about how to enter the field, which is about the process of becoming a designer rather than a specific mechanic or a defended design claim."
+"Player Identity & Projection
+
+Something I find interesting in game design is how much players project themselves onto characters even when the protagonist has a defined personality. What design choices make players feel connected to a character vs. feeling like they’re controlling someone completely separate from themselves? Would you say that silent protagonists, dialogue choices, customization, etc. actually strengthen player identity, or can they weaken the narrative? Something I've been wanting to discuss with like-minded individuals.",player_experience,easy
+"How do you balance a RPG leveling system?
+
+I’m working on two projects: a short term survival horror game and a long term elder scrolls-ian styled RPG. I’ve been getting stuck in a loop about leveling. How do you balance the leveling system while making every stat feel impactful?
+
+I’m trying to make it so that the leveling system is a mix of OG elder scrolls (attributes, racial traits, skills) and new elder scrolls (skill trees). The issue I keep running into is how do I balance skill trees, attribute points, and racial traits.",mechanic_design,easy
+"Is it possible for turn based games to not have rock-paper-scissor type advantages?
+
+I noticed that most turn based games that I've played has these like Pokémon (water beats fire), FGO (archer beats saber), Honkai: Star Rail (physical beats physical), but are there other turn based games without this mechanic?
+
+Are these type advantages necessary for gameplay? Why are these so common in turn based games (at least based on my limited experience). If a game doesn't have it, should another mechanic be added to replace it?",design_theory,easy
+"Indie cozy gameplay - how much is enough?
+
+I'm hashing out an idea for a weird little cozy game, either single player or 2-player local co-op (split screen so each player can be in different areas doing different tasks). How many hours of content would be expected if the game were priced from $15-$20 USD? Also thinking of an 'infinite play' option tier if funded via Kickstarter, where after story mode is over you'd still be able to play different parts of the game as the rest of the world continues with daily life.",mechanic_design,
+"How does large scale perspective feels off in most games?
+
+Why in most games very large things look so small? In Subnautica leviathans look much smaller than their actual size compared to the player; in No Man's Sky freighters are insanely huge but when flying with the ship those and the planets never feel grand or imposing. The only game I can think of that made me go 'woah that is insane' was the snake from God of War. Why is that? Is it the player FOV? The character movement speed? A design trick in some cases?",player_experience,"Notices a real pattern (large objects feeling small) across named games with no proposed explanation, asking why it happens; the post is the noticing/wondering itself, centered on the player's perceptual experience rather than a system being built or a defended theory."
+"Why should real-world value automatically become in-game value?
+
+One thing about Earth 2 never made sense to me. Why is everyone buying places that are already valuable in real life? Isn't that backwards? Wouldn't it be more interesting if players created the important places themselves? Like maybe some random port ends up becoming the center of the economy 5 years later. Maybe everyone buying New York today is completely wrong. I don't know. Just feels like the game should discover value instead of importing it.",mechanic_design,somewhat difficult
+"I'm creating a game called Racetrack Tycoon. Looking for advice, tips or ideas on how best to optimize item costs and balance the economic elements of the game.
+
+The title describes the concept of the game pretty fully. It's a classic tycoon game, similar to things like Zoo Tycoon and RollerCoaster Tycoon. In it, you build track, grandstands, burger vans etc. Starting from a relatively blank canvas, how could I best go about putting a cost on all of the various items and getting to a balanced gameplay result.",mechanic_design,
+"Making teleportation cohesive in Bionic Blue (free-of-charge open-source game)
+
+Last week I wrote a small essay on what I did to help make teleportation cohesive in my game, a 2D action platformer, that is, make it so teleportation played well with other elements of the game as well as the design and writing. I just released its first fully playable mission. I thought sharing this would promote interesting discussion on measures y'all take to make your games more cohesive, just like I did for teleportation.",dev_process,"Shares a write-up about the process of integrating a mechanic cohesively with the rest of a shipped/in-progress game's design and writing, framed as a development reflection rather than asking for help on the mechanic itself."
+"Software for testing simple game ideas?
+
+I'm currently having fun outlining the concept for a game which involves the use of a roulette and multiple decks of poker cards. I was wondering if there was software or a multitude of tools that could be used to simulate that environment, as well as scoring or currencies, to test out concepts and interactions in real time without having to buy the cards myself. I don't need complex scripted events, just a way to visualize what I'm doing that isn't just on paper.",dev_process,Asks about a prototyping tool/workflow rather than a mechanic decision or a design theory claim; squarely about the process of testing a concept.
+"Chess, but pieces have health and damage stats
+
+I'm thinking of making a roguelike where it's basically chess, but pieces may have upgradable statistics of health and damage, like in polytopia, and if the attacked piece survives, it does retaliation damage. However, I need each level to be bite-sized, so what are ways to keep this combat style but not have it be so complicated and time consuming? (Players have to plan out attacks with HP and damage in mind, which really slows down the roguelike velocity)",mechanic_design,easy
+"Rewards for beating a challenge - make that same challenge easier next time?
+
+Feels like a lot of people think this way about rewards in games but to me its just wrong.
+
+Theres nothing more annoying that beating a boss and getting an epic weapon that makes all your previous challenges insignificant. The only solution to this type of reward system i can think of is just adding A LOT of new content all the time.
+
+Is there any other way or techniques to mitigate this to make a game more re-playable?",design_theory,somewhat difficult
+"Feedback on Accessibility settings for Platformers
+Heya y'all! My name is Elias/Edzra and I'm a game design student. I'm currently working on an exam where I develop accessibility settings to make platformers more comfortable for players with motor disorders.
+
+
+I'm focusing on 2 types, being DCD and gamers with one functional hand for gaming. Any feedback is appreciated, even if you don't fall under this specific type of category!
+
+
+Here's a link to my project on Itch.io:
+
+
+Thanks in advance!",dev_process,somewhat difficult
+"How can a short horror game build tension from an ordinary situation?
+
+I'm designing a short first-person horror game where the fear comes from a normal situation slowly becoming wrong. I'm trying to avoid relying on monsters, chase sequences, or constant jumpscares. I want the player to feel unsafe through small choices, uncertainty, and ordinary actions becoming suspicious. What mechanics, pacing techniques, or player decisions would make this kind of 10-20 minute horror experience tense?",mechanic_design,
+"Struggling with combat balance in my mobile game – need advice
+
+The combat system is based on instant results (no animations), where player stats and item bonuses determine the outcome. The issue is balancing it so fights don't feel random but also not completely predictable. Right now, sometimes the player loses too quickly, and other times wins too easily depending on stat scaling. How do you balance stat-based combat systems, and what are ways to make outcomes feel fair but not boring?",mechanic_design,Easy.
+"Have you ever added a mechanic just to make the board matter more?
+Discussion
+In a recent design, players were mostly focused on collecting sets and interacting with each other. The board itself felt like little more than a movement track.
+
+To address that, I added a movable obstacle that creates temporary bottlenecks and changes optimal routes throughout the game.
+
+Have you ever added a mechanic specifically to make the board state more relevant? What worked and what didn't?",mechanic_design,easy
+"Endless Mode Scaling?
+
+What are some ways to make an endless mode scale without it feeling stale?
+
+
+For context I'm talking about a roguelike bullet-heaven.
+
+
+I only have a certain # of enemy types to introduce, so should I add a NG+ cycle where at the end of a 10-min run, you repeat/cycle through and the enemies have more health now?
+
+
+Feels like just increasing the # of enemies over and over has diminishing returns and a more definite ceiling.
+
+
+Thanks for your answers!",mechanic_design,easy
+"Can a Prestige system be done well?
+
+Very curious what y'all think of this or if there are any examples of success cases. Every time I've seen a game allow me to reset my leveld to the beginning with a slight permanent boost, it always seems to take away from the game rather than add to it. However, I find the concept very interesting, and I wonder if I've disliked it in practice simply because the idea of it doesn't hold up in practice or because it's usually done poorly",design_theory,somewhat difficult
+"Surfacing Difficulty Modifiers to Players?
+
+As a player and thinking as a game designer, how do you feel about surfacing different levels of difficulty modifiers?
+
+
+Things like:
+
+
+Baked-in difficulty that isn't adjustable
+
+Clean easy/medium/hard options
+
+Very modular system where you can adjust slider values for a number of mechanics
+
+
+Personally I have found value in each of these approaches, and it really depends on the genre which I prefer.
+
+
+What are your thoughts?",design_theory,somewhat difficult
+"Is there ways to improve Weapon Durability as a system?
+
+Weapon Durability, a system that either you'll love or hate. BOTW/TOTK are a exmaple of this, since I've seen people either wasting all their weapons on just a few enemies, or hoarding them until the end. This since they fear they might not have enough for a major fight like a Boss fight. This lead to me asking; are there way to make the system let's punishing, or at least being able to recover easily from it.",mechanic_design,easy
+"Game Design Support
+
+I am a solo indie-dev who has been working for the past 2 months on a new game concept. I've reached a point where I feel like I'm running in circles around beta-players' negative feedback, most of which refers to not understanding the concept/game-loop. I've reached a level where I require professional aid with my game-design decisions and deciding on game-mechanics/pivot concepts to improve the overall experience. Any advice you could share?",dev_process,"Easy. About being stuck in the iteration/feedback process itself with no specific mechanic question attached, asking for general help with how to proceed in development."
+"How would players navigate a fork in the road during exploration?
+
+If you are exploring a map and you run into a fork for the first time, how do you usually proceed?
+
+Would you push all the way down one path until you hit a dead end? (Depth-First Search)
+
+Or would you advance through all branches evenly? (Breadth-First Search)
+
+Which strategy does a game designer intend players to choose? And does this behavior vary across different game genres?",player_experience,easy
+"W vs Space Bar? comfort in keyboard keys
+
+I’ve been thinking about control schemes in 2D games and wanted to get some opinions.
+
+For movement, WASD is pretty standard, but when it comes to jumping in 2D games, it can be W or space bar. Which would you prefer for comfort? Just one? Both? Or that one is used for attacking, etc?
+
+Also, which keys are more comfortable for you to interact with in video games besides the space bar/W to jump?",player_experience,easy
+"Auto-balancing algorithm for incremental games?
+
+I’m working on an incremental game and I’ve been spending a lot of time balancing it, running tests and tweaking each variable.
+
+During this process I started wondering: would it be possible to create an algorithm that handles this balancing automatically, in a way that could be reused in other games? After all, every incremental game basically works with the same types of variables.",dev_process,very difficult
+"Organic and automatic city builder
+
+I was developing a city builder set between Antiquity and the Middle Ages, and realized it can be tedious for players to lay everything out manually. I thought it could be cool to have a system where the player only places a 'city center' like a marketplace or forum, and houses spawn dynamically around it. Here's a video of what I've managed to develop in Unity so far; let me know what you think.",mechanic_design,Easy.
+"Enemy AI features that can make a stealth game feel unique?
+
+I often think of F.E.A.R and how their enemy AI could throw down props for cover, or play dead to sneak up behind you when you aren't looking.
+
+I'm making a game more similar to Splinter Cell. Do you guys have suggestions on how to design my AI, beyond simply reacting to doors opening/closing, lights going out, or hearing sounds?",mechanic_design,easy
+"Earliest balance patch in history?
+
+In the 1500s the queen was added to chess, before then it was a 7x7 board. This encouraged more aggressive play and moved away from a slower, more defensive game. 500 years later the same rules apply and the same pieces are there. Can this actually be considered a 'patch'? And if it can, is this the most successful balance patch in history?",design_theory,"Somewhat difficult. Reads almost like trivia/an observation, but it does use a specific historical change (adding the queen, board size shrinking) as evidence for a real claim about what counts as a successful balance patch, so it clears the observation/claim bar even though the post is explicitly self-described as not serious."
+"Stealing mechanics in family games?
+
+How much stealing is too much in a family game?
+
+I'm working on a game with resource stealing, and I'm curious what mechanics help keep it fun rather than mean. Right now, you can only steal one at a time (goal is to collect 4 different resources)... wondering if I should keep it that way or add some sort of other mechanic instead?",mechanic_design,easy
+"What's one gaming feature you wish every developer would include?
+
+Every gamer seems to have that one feature they appreciate whenever they see it.
+
+Maybe it's cross-platform play, customizable difficulty settings, transmog systems, photo modes, offline play, or something else entirely.
+
+What's the feature you wish would become standard across the industry and why?",player_experience,easy
+"How I'd have do it yourself navigation in games
+
+I've played Hell is Us and liked how the compass was used, and to avoid needing a pen and paper IRL I'd include a camera to take pictures for later reference, and if you want to return somewhere more easily, mark a path with a yellow spray paint can. No maps or markers, just your own tools and effort.",mechanic_design,"Easy. Presents a specific navigation system idea inspired by one shipped game, framed as the poster's own design proposal rather than a generalizable claim."
+"Dissecting the Boss Rush Genre?
+
+I feel like Boss Rush games have been quietly exploring some interesting design space and I'm interested in making one myself.
+
+But I've found it surprisingly difficult to find resources about what people enjoy about the genre or design principles of the genre. Does anyone know where I could find some?
+
+Thanks!",design_theory,easy
+"Health Bars in Turn Based Games
+
+What are you guys' thoughts on the choice between showing exact health bars with numbers vs using things like hurt, wounded, and near death or other such things as benchmarks in turn based games like WotR? Which one do you like more and why? Or if you made a turn-based combat game, which did you use and why?",mechanic_design,
+"Moral Systems & Oversimplification
+
+From a design standpoint, how do you create moral systems that feel nuanced without confusing players or making choices feel meaningless? Do you think visible morality meters really help players engage with ethics, or do they just encourage min-maxing outcomes instead of genuine decision-making...",design_theory,easy
+"Under what circumstances would you be willing to repeat a boss fight/content?
+
+Just as the title says, under what circumstances would you be willing to repeat a boss fight/piece of content? What threshold for intrinsic (i.e. how fun it is) and extrinsic value (item rewards) is sufficient to make you willing to fight a boss again?",player_experience,easy
+"Repitition & Burnout
+
+Ever notice how repetition in games can either feel relaxing or completely burn you out? Grinding, daily tasks, farming resource sit can go both ways.
+
+What’s the difference between “this is satisfying” and “I’m tired of this”? Is it variety, rewards, or just how long the game expects you to keep doing it?",player_experience,easy
+"What would stop you playing a roguelite twin stick shooter?
+
+There are a lot of roguelites and a lot of twin stick shooters, but not so many successful pairings of the two genres, and even fewer in recent years. So what would put you off? Is it something visual? Something mechanical? Are they too fast paced or lacking in depth?",player_experience,"Easy. Asks specifically what would make a player avoid/dislike a genre pairing, centered on player reaction/preference rather than a system being built or evidence-backed claim."
+"What's more important in a deckbuilder?
+
+We're working on a deckbuilder game. Of course we want everything to feel harmonious, but we'd love to hear your thoughts on what should be the top priority: builds (deck combinations and strategies), core game mechanics, user interface, visuals, juiciness, or sound design.",mechanic_design,
+"Has a gridless suitcase style inventory ever been developed before?
+
+Essentially, something like the Resident Evil 4 inventory without the grids. Meaning you could rotate items at any degree you wanted instead of only 90 degrees. Items could be placed diagonally. Would this be giving the player too much freedom?",mechanic_design,easy
+"How do people design book adaptations?
+
+I'm working on designing an indie game adaptation of the webnovel Shadow Slave, and I'm curious on both how designers usually go about this and how the process really goes for any game adaptation, whether it's books, shows, or movies. It's a fairly new idea to me.",dev_process,"Asks about the general process of approaching a book-to-game adaptation, which is about the development approach/process rather than a single mechanic decision or a generalizable claim about design theory."
+"How would you make traditional level-by-level 2d platformers feel fresh again?
+
+Because it feels like the only 2d platformers people bother with are metroidvanias, and their one map.
+
+Be it movement, storytelling, gimmicks or anything else, any tips on making traditional level-by-level ones feel fresh?",design_theory,somewhat difficult
+"What makes a game ""unique""?
+
+What makes you go: I want to make this, because it has not been done before? Graphics, gameplay, inspiration (a movie, a game, a comic/book)? What then, is what you tell people, its unique because of X? What do you emphasize when someone asks: what makes your game unique?",design_theory,
+"what's a game mechanic you wish more games used?
+
+Personally I love games where the world reacts to what you've done, even in small ways, like NPCs remembering things and environments changing over time. Makes everything feel more alive. What's a mechanic you think is underused?",player_experience,"An opinion-poll-style post about what players wish more games had, with no specific system being built and no evidence-backed defended claim, framed entirely around the personal player wish/preference."
+"How do you make two progression paths feel equally valid when one gives information and the other gives power?
+
+Been designing a puzzle game where you edit cause-effect relationships in a node graph: pause time, rewire links, hit play, watch consequences cascade, repeat.",mechanic_design,Truncated but the content is squarely about the poster's own system (two progression paths in their puzzle game) and a specific design decision about balancing them.
+"Where can I learn about knowledge-based games?
+
+Perhaps I'm just doing a bad job of searching, but I'm having a hard time finding information about what makes a knowledge-based game, core design principles of one, what makes one good or bad, examples, etc.",dev_process,somewhat difficult
+"Tips/videos to help with making a fun and interesting dialogue-based RPG?
+
+Similar to old pokemon, earthbound, undertale. I'm trying to come up with gameplay ideas to make my dialogue based RPG unique but it isn't working out",dev_process,somewhat difficult
+"weird challenge
+
+If you were tasked to make a game for the movie Kill Bill, what design and concepts would you use to try to develop the feeling of the movie without making the game just another unoriginal hack and slash?",design_theory,
+"Organizing feedback from players
+
+What is a best way to organize the feedback that I've gained for my game?
+
+Organizing observations I've made during playthroughs from players, as well as the players comments.",dev_process,easy
+"Good Game Design - Mina The Hollower (ft. Yacht Club Games)
+
+Cool video with a developer interview sharing insights about the creation process behind Mina The Hollower (by Yacht Club Games), highly recommend.",dev_process,"Very thin post but the content shared (a developer interview about the creation process of a shipped game) is squarely about production/development process; kept since it has more than just a title (a one-sentence description), unlike pure link-only posts."
+"should mobile games prioritize immersion or performance
+
+As mobile games become more visually complex, should devs focus on immersion and fidelity, or maintain simpler but more stable experiences?",design_theory,Easy. Pure genre-level question with no project attached and no evidence; routed to design_theory since the topic itself (immersion vs performance tradeoff) is a general design question rather than player-experience or a specific system.
+"Game Design 101 Book/YouTube Recommendations?
+
+What books and YouTube videos about the fundamentals of game design would you recommend?",design_theory,"Forced-fit pure resource request with no specific game/topic named; routed to design_theory since the subject matter (fundamentals of game design) is itself a general design-theory topic, consistent with the planning.md rule for resource requests."
+"Would play and/or Buy Short Games.
+
+Hi there, this might be a weird question, but I’m a beginner game developer trying to make my first completed game. Because of my shift-based job, limited time, and current skill level, I’m considering focusing on smaller games instead of large projects. As players, would you buy, play, or support short action-adventure or mini-RPG games that last around 30 minutes to 2 hours? I’m not talking about roguelikes or highly replayable games—more like a one-time, memorable experience you finish and enjoy. Do you think short games are a good direction for indie developers starting out? Also, what short action-adventure games would you recommend as case studies for pacing, storytelling, or design?",dev_process,"The post is primarily about scoping a first project and validating whether short games are a viable direction for a developer with limited time and experience. Audience interest is relevant, but the central decision concerns project size, feasibility, and development strategy."
+"What game mechanics do you find the most fun and why?
+
+What makes them special?",player_experience,"The post directly asks players which mechanics they enjoy and why. Player preference and the subjective experience of fun are the primary subject, rather than the design of one specific system."
+"Tabletop to Mobile Multiplayer adaptations
+
+I’ve been working on making a mobile game out of an old 1960s-era tabletop game I played once. It is my first time working with mobile games, and beyond the UX challenge of a small screen and showing information players would normally see on a table, I have realized that certain rules need to change. For example, every turn a special die is rolled that changes some parameters. I replaced the physical roll with RNG and a popup at the start of a new round, but during play it feels arbitrary because the shared experience of rolling and watching the result is gone. After playtesting with family, I realized I will have to revise several systems like this. It has been an interesting process of learning which rules only make sense with physical cards and dice and how to replace them so the result is not merely a tabletop game converted to a screen. I’m curious about other developers’ experiences adapting tabletop games into video games, or vice versa.",dev_process,"This is a postmortem-style discussion of adapting a tabletop game to mobile. It focuses on playtesting, identifying rules that depend on physical presentation, and revising the design for a digital production context."
+"I want the player to SEE this menu, but it doesn't WORK. How can I make it more obvious?
+
+I have a side menu that contains a special mechanic for each class in my game, but I need players to click and use it. I keep seeing both myself and other players forget about it. I added a light that moves up and down, but it did not help. Part of the problem may be that the player must click it, while I do not have enough screen space to show all of the information without opening the menu. What can I do?",mechanic_design,"The post asks how to redesign a concrete UI interaction so players notice and use a class-specific mechanic. It is primarily an affordance, visibility, and access problem within a specific gameplay system."
+"Looking for book recommendations, going to work on an editor tool
+
+As a creative professional, I am going to work on a digital tool that enables users to create simple 3D games and experiences. I am looking for book recommendations to deepen my understanding before I start the job. Two books that came up in my search were The Art of Game Design: A Book of Lenses and A Theory of Fun for Game Design. Have you read these, or would you recommend something else?",dev_process,"The post is a learning-resource request made in preparation for a new development role. Its primary focus is how to research and prepare for the work, rather than how to design one particular mechanic."
+"Does my game start too survival-crafty for a 4x game?
+
+I am developing a historical 4X game divided into six epochs. The first begins with hunter-gatherers in early Pleistocene East Africa, followed by settlements, cities, and eventually space colonization. A core idea is that the scope and map scale expand with each epoch. Because the first epoch starts with only a few individuals, it currently includes crafting, hunger, thirst, and survival. Some testers said it feels too much like a survival game compared with later epochs. Do I need to redesign the opening so it reads more clearly as a 4X game, or can the changing genre emphasis work if the epochs remain connected?",dev_process,This is primarily project-direction and prototype-validation work. The developer is using feedback to decide whether the opening needs a substantial redesign so the larger game has a coherent identity.
+"what makes a 3d sci-fi spaceship RPG ""click""?
+
+I have been thinking about revamping an old project, with the constraint that it must remain a 3D science-fiction spaceship RPG. I am struggling to identify the project's central thesis. Should it focus on deep lore, satisfying ship controls, or another hook? How do I avoid a huge empty map filled with repetitive content? I considered cloning a known successful game, but I would still need to understand why that game works. What direction would help this concept feel focused?",dev_process,The main issue is early concept development and finding a clear project thesis before rebuilding an old game. That makes it an ideation and project-direction problem rather than a single mechanic question.
+"Making multi-game style engine! (the ""perspective"" engine)
+
+For years I have wanted to make a game where the player can switch between a top-down pixel action adventure, a hand-drawn metroidvania, and an N64-style first-person shooter. My idea is to store world, entity, and projectile data underneath and feed it to different renderers or sub-engines. I know the idea may be unrealistic, and I have spent years imagining possible problems while learning game design and programming. Now that I am trying to begin in Godot, I cannot organize the framework or determine the right first prototype. I am looking for guidance on how to structure and scope the idea before implementation.",dev_process,"The post concerns planning, architecture, scoping, and choosing a first prototype for a highly ambitious project. It is principally about the development process and organizing the work."
+"Game Design Help
+
+I want to become a very good game designer rather than an average one, and I am willing to put in the time. However, I do not know how top designers actually learned. I already know programming and have worked on game development, but I am unsure whether I should study through game design documents, analyze games, build many small projects, rely on intuition, or use AI as a learning aid. What is a practical path for learning game design without making the process unnecessarily confusing?",dev_process,"This is explicitly about learning methods, practice, documentation, and developing professional design skills. It belongs to the workflow and education side of game development."
+"No tutorial. No hints. Bad design or interesting experiment?
+
+I made a minimalist iOS puzzle game with no tutorial, instructions, or text. Players discover how everything works solely by interacting with it. During testing, some players explored for long sessions and described the experience as relaxing or meditative. Others left quickly because nothing explained what to do. Can pure discovery replace onboarding in a puzzle game? How much confusion is acceptable before it stops feeling intriguing and starts feeling unclear or frustrating?",player_experience,"The main subject is how different players emotionally and cognitively respond to ambiguity, discovery, and a lack of instructions. The design details are discussed through the resulting player experience."
+"What do you think about collage art in investigation games?
+
+I am working on an investigation game for patient players who enjoy reading carefully, connecting clues, questioning characters, and slowly forming a theory. We chose a collage art direction because evidence boards, newspaper clippings, maps, photos, symbols, and handwritten notes already resemble collage. Do you think this style can make investigation feel tactile and immersive, as though the player is handling evidence? Or is it likely to become visually messy and hurt readability? For players who enjoy deliberate investigation games, what most affects satisfaction: writing, clues, deduction, atmosphere, or interface?",player_experience,"The post is centered on players' perception of visual style, immersion, readability, and satisfaction in investigation games. Those audience responses are the primary object of discussion."
+"Real-life ""Among Us"" mixed with Zombie Tag. Would you play this?
+
+I am exploring a location-based mobile game played across a university campus or park. A few players are secretly zombies who infect others through proximity, while hidden human roles such as doctors and soldiers can cure or eliminate suspected zombies. Every fifteen minutes, everyone gathers in a safe zone to debate who may have been infected based on their behavior in the real world. Would this feel like a fun, low-pressure way to meet people, or would the hidden roles and physical play make the social experience uncomfortable?",player_experience,"The primary question is whether players would enjoy the social pressure, physical interaction, and uncertainty of the concept. It is framed around anticipated player comfort and interest."
+"Tech Tree Layout: Horizontal (L to R) or Vertical (Bottom to Top) for a realistic tank sim?
+
+I am working on a World War II tank game and deciding how the technology tree should be presented. A horizontal tree makes it easy to compare vehicles within the same tier and fits widescreen displays. A vertical tree may communicate progression more naturally because players feel as though they are climbing toward more advanced machines. Which layout feels more intuitive and immersive to you, or does the orientation not matter as long as the interface is clean?",player_experience,"Although it concerns a UI layout, the post directly asks which presentation players perceive as intuitive, immersive, and easy to understand. Player interpretation is the central subject."
+"need feedback and critique on my new app: internetree
+
+The concept is one shared digital tree kept alive by everyone on the internet. Users can water it, but each person's watering can refills slowly, so no individual can sustain it alone. If the community neglects it for long enough, the tree dies permanently, leaves behind a gravestone and history, and a new generation begins. You do not see other people live, only traces such as a keeper count, light effects, and a recap of what happened while you were away. Does that feel communal or like a single-player app? Without a health bar or timer, does the tree's visible decline feel atmospheric or annoying? Is a death cycle measured in days too slow to motivate people to return?",player_experience,"The post asks how users would perceive community, urgency, atmosphere, and motivation in a shared asynchronous experience. These are primarily player-experience questions."
